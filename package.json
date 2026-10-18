@@ -1,0 +1,14 @@
+{
+  "name": "ambavi-site",
+  "private": true,
+  "type": "module",
+  "description": "ამბავი · ციფრული მოსაწვევები — საიტი (Astro)",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.4.0"
+  }
+}

@@ -1,0 +1,72 @@
+---
+/* =====================================================================
+   ამბავი · საიტის საერთო ჩარჩო (layout)
+   ყველა გვერდი ამას იყენებს: <head>, მენიუ, ფეხი და სკრიპტები აქ ერთხელ წერია.
+   მენიუში ახალი გვერდის დამატება: ჩაამატეთ ხაზი ქვემოთ, `menu` სიაში.
+
+   პარამეტრები, რომლებსაც გვერდი გადმოსცემს:
+     page         — გვერდის id (მენიუში აქტიური ბმულისთვის): home, designs, features ...
+     title        — ბრაუზერის ჩანართის სათაური
+     description  — მოკლე აღწერა Google-ისთვის და გაზიარებისთვის
+   ===================================================================== */
+interface Props { page: string; title: string; description: string }
+const { page, title, description } = Astro.props;
+
+const menu = [
+  { id: "home",     href: "index.html",    label: "მთავარი" },
+  { id: "designs",  href: "designs.html",  label: "დიზაინები" },
+  { id: "features", href: "features.html", label: "რა შედის" },
+  { id: "how",      href: "how.html",      label: "როგორ მუშაობს" },
+  { id: "prices",   href: "prices.html",   label: "ფასები" },
+  { id: "faq",      href: "faq.html",      label: "კითხვები" }
+];
+---
+<!doctype html>
+<html lang="ka" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="theme-color" content="#FAF7F2">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <link rel="icon" href="assets/site/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Noto+Serif+Georgian:wght@300;400;500;600&family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/site/css/site.css">
+  <script is:inline>document.documentElement.classList.remove("no-js")</script>
+</head>
+<body data-page={page}>
+
+<!-- ===== მენიუ: მიმდინარე გვერდს site.js აღნიშნავს (body data-page) ===== -->
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><b>ამბავი</b><i>invitations</i></a>
+    <button class="burger" type="button" aria-label="მენიუ" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu">
+      {menu.map(m => <a href={m.href} data-page={m.id}>{m.label}</a>)}
+      <a class="btn dark" href="order.html" data-page="order">შეკვეთა</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== გვერდის შიგთავსი ===== -->
+<slot />
+
+<!-- ===== ფეხი: კონტაქტებს data.js ავსებს, ცარიელი ბმული იმალება ===== -->
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div><a class="logo" href="index.html"><b>ამბავი</b><i>invitations</i></a><p>ციფრული მოსაწვევები ქორწილისთვის, ნიშნობისთვის, დაბადების დღისთვის და ნათლობისთვის. მზადდება <span class="js-days">5</span> დღეში.</p></div>
+    <div><h4>გვერდები</h4><nav>{menu.slice(1).map(m => <a href={m.href}>{m.label}</a>)}</nav></div>
+    <div><h4>კონტაქტი</h4><nav><a href="order.html">შეკვეთის ფორმა</a><a class="js-wa" href="#">WhatsApp</a><a class="js-insta" href="#">Instagram</a><a class="js-fb" href="#">Facebook</a><a class="js-mail" href="#">ელფოსტა</a></nav></div>
+  </div>
+  <p class="copy">© <span class="js-year"></span> ამბავი · ციფრული მოსაწვევები</p>
+</footer>
+
+<!-- სკრიპტები: data.js — მონაცემები (კონტაქტები, დიზაინები, ფასები), site.js — საიტის ლოგიკა -->
+<script is:inline src="assets/site/js/data.js"></script>
+<script is:inline src="assets/site/js/site.js"></script>
+</body>
+</html>

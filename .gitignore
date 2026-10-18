@@ -6,3 +6,7 @@
 Thumbs.db
 desktop.ini
 .vscode/
+# Astro / Node.js: ავტომატურად იქმნება, GitHub-ზე არ ვტვირთავთ
+node_modules/
+dist/
+.astro/

@@ -1,0 +1,53 @@
+---
+/* ამბავი · ფასები — პაკეტები და დამატებითი სერვისები (ფასები: assets/site/js/data.js → packages)
+   მენიუ, ფეხი და <head> — src/layouts/Site.astro */
+import Site from "../layouts/Site.astro";
+---
+<Site page="prices" title="ფასები და პაკეტები · ამბავი" description="ციფრული მოსაწვევის პაკეტები: კლასიკა, პრემიუმი და 3D ექსკლუზივი. ყველა მზადდება 5 დღეში.">
+<main>
+  <!-- ===== პაკეტები და ფასები ===== -->
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">მთავარი</a><span>/</span><span>ფასები</span></p>
+      <span class="k">Packages</span>
+      <h1>პაკეტები და ფასები</h1>
+      <p>აირჩიეთ პაკეტი, რომელიც თქვენს დღესასწაულს მოერგება. ყველა პაკეტი მზადდება <span class="js-days">5</span> დღეში.</p>
+    </div>
+  </section>
+
+  <!-- ===== პაკეტები (ივსება data.js-დან) ===== -->
+  <section class="block alt">
+    <div class="wrap"><div class="packs" data-packs></div></div>
+  </section>
+
+  <!-- ===== დამატებით ===== -->
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="k">Extras</span><h2>დამატებით</h2><p>ნებისმიერ პაკეტს შეგიძლიათ დაამატოთ.</p></div>
+      <div class="feats" data-extras></div>
+    </div>
+  </section>
+
+  <!-- ===== ხშირი კითხვები ფასებზე ===== -->
+  <section class="block alt">
+    <div class="narrow">
+      <div class="sec-head reveal"><span class="k">Questions</span><h2>ხშირი კითხვები ფასებზე</h2></div>
+      <div class="faq">
+        <details class="reveal"><summary>რას მოიცავს ფასი?</summary><p>მოსაწვევის სრულ დამზადებას თქვენი მონაცემებით, ბმულს, რომელსაც სტუმრებს უგზავნით, და პაკეტში მითითებულ შესწორებებს.</p></details>
+        <details class="reveal"><summary>შეიძლება პაკეტის შეცვლა შეკვეთის შემდეგ?</summary><p>დიახ. თუ მუშაობისას მოგინდათ ფოტოები, 3D ან ვიდეო, პაკეტს გავაფართოებთ.</p></details>
+        <details class="reveal"><summary>რამდენ ხანში მზადდება?</summary><p><span class="js-days">5</span> დღეში იმ მომენტიდან, როცა ძირითადი დეტალები გვაქვს. მე-4 დღეს გიგზავნით პირველ ვერსიას.</p></details>
+      </div>
+      <div class="more reveal"><a class="btn line" href="faq.html">ყველა კითხვა <svg class="i"><use href="#s-arrow"/></svg></a></div>
+    </div>
+  </section>
+  <!-- ===== მოვამზადოთ თქვენი მოსაწვევი? ===== -->
+  <section class="block">
+    <div class="wrap">
+      <div class="contact reveal">
+        <h2>მოვამზადოთ თქვენი მოსაწვევი?</h2>
+        <p>შეავსეთ მოკლე ფორმა ან პირდაპირ მოგვწერეთ. თუ დღეს შეუკვეთავთ, მოსაწვევი მზად იქნება <span class="js-ready"></span>-ს.</p>
+        <div class="ctas"><a class="btn gold" href="order.html">შეკვეთის ფორმა</a><a class="btn wa js-wa" href="#"><svg class="i"><use href="#s-wa"/></svg>WhatsApp</a></div>
+      </div>
+    </div>
+  </section></main>
+</Site>

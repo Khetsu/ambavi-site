@@ -1,0 +1,37 @@
+---
+/* ამბავი · დიზაინები — ყველა მოსაწვევი ფილტრებით (სია: assets/site/js/data.js → designs)
+   მენიუ, ფეხი და <head> — src/layouts/Site.astro */
+import Site from "../layouts/Site.astro";
+---
+<Site page="designs" title="დიზაინები · ამბავი" description="ციფრული მოსაწვევების დიზაინები: ქორწილი, ნიშნობა, დაბადების დღე, საბავშვო და ნათლობა. ყველა დიზაინი ცოცხალია.">
+<main>
+  <!-- ===== აირჩიეთ დიზაინი ===== -->
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">მთავარი</a><span>/</span><span>დიზაინები</span></p>
+      <span class="k">Our designs</span>
+      <h1>აირჩიეთ დიზაინი</h1>
+      <p>თითოეული დიზაინი ცოცხალია. დააჭირეთ „ნახვას“ და გახსენით ისე, როგორც თქვენი სტუმრები გახსნიან. ნებისმიერ დიზაინს მოვარგებთ თქვენს ფერებს, სახელებს და ისტორიას.</p>
+    </div>
+  </section>
+
+  <!-- ===== დიზაინების ბარათები (ივსება data.js-დან) ===== -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="filters" id="filters" role="group" aria-label="კატეგორია"></div>
+      <div class="grid" data-designs="all" data-filters="#filters"></div>
+    </div>
+  </section>
+
+  <!-- ===== ვერ აირჩიეთ? შევქმნით ახალს ===== -->
+  <section class="block">
+    <div class="wrap">
+      <div class="contact reveal">
+        <h2>ვერ აირჩიეთ? შევქმნით ახალს</h2>
+        <p>მოგვწერეთ თქვენი იდეა, ფერები და დღესასწაულის თემა. ინდივიდუალური დიზაინიც <span class="js-days">5</span> დღეში მზადდება.</p>
+        <div class="ctas"><a class="btn gold" href="order.html">შეკვეთის ფორმა</a><a class="btn line" href="prices.html">პაკეტები და ფასები</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+</Site>
