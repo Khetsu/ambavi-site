@@ -1,0 +1,8 @@
+# ამბავი · ფაილები, რომლებიც GitHub-ზე არ უნდა აიტვირთოს
+*.mp4
+*.mov
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/

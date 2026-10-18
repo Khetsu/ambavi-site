@@ -1,0 +1,134 @@
+<!doctype html>
+<!-- ამბავი · მოსაწვევი „kids-luka-5“
+     ტექსტები და მონაცემები: js/config.js · დიზაინის სტილი: css/theme.css · ილუსტრაციები: images/art/
+     საერთო ძრავა (ენა, მუსიკა, ეფექტები, უკუთვლა, RSVP): js/core.js ... ან საიტზე assets/core/ -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ლუკა ხდება 5 წლის! · დაბადების დღე</title>
+<meta name="description" content="ლუკას დაბადების დღე · 21 ნოემბერი 2026, თბილისი">
+<meta name="theme-color" content="#8FD3FF">
+<meta property="og:title" content="ლუკა ხდება 5 წლის! · 21.11.2026">
+<meta property="og:description" content="დაბადების დღის მოსაწვევი">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+Georgian:wdth,wght@62.5..100,400..900&display=swap">
+<link rel="stylesheet" href="../../assets/core/css/base.css">
+<link rel="stylesheet" href="css/theme.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bal" cx=".35" cy=".3"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".22" stop-color="#FF9B7D"/><stop offset="1" stop-color="#F0563A"/></radialGradient>
+  </defs>
+  <symbol id="cloud" viewBox="0 0 200 90"><path d="M30 86C10 86 0 72 4 58S28 40 40 44C40 20 64 6 86 14 98 0 128 0 140 18 160 10 186 22 182 46 198 50 202 74 186 84Z" fill="currentColor"/></symbol>
+  <symbol id="hills" viewBox="0 0 400 120" preserveAspectRatio="none"><path d="M0 60C60 20 120 30 180 52S300 20 400 46V120H0Z" fill="#8BD17C"/><path d="M0 84C80 56 160 70 240 80S340 64 400 76V120H0Z" fill="#6BCB77"/></symbol>
+</svg>
+
+<div class="sky" aria-hidden="true">
+  <svg class="cl a"><use href="#cloud"/></svg><svg class="cl b"><use href="#cloud"/></svg><svg class="cl c"><use href="#cloud"/></svg><svg class="cl d"><use href="#cloud"/></svg>
+</div>
+
+<!-- ============ GATE: pop the balloon ============ -->
+<div class="gate" id="gate" role="button" tabindex="0" aria-label="მოსაწვევის გახსნა"
+     data-stages="s1:0,s2:420,s3:760,s4:1700" data-open="2400" data-burst="430:confetti:#balloon:180;450:sparkle:#balloon:30" hidden>
+  <div class="g-sun" aria-hidden="true"></div>
+  <svg class="g-cloud k1" aria-hidden="true"><use href="#cloud"/></svg><svg class="g-cloud k2" aria-hidden="true"><use href="#cloud"/></svg>
+  <div class="g-text">
+    <span class="g-title">Hooray!</span>
+    <span class="g-names"><span data-t="host"></span> · <span data-t="age"></span></span>
+    <span class="g-date" data-t="dots"></span>
+  </div>
+  <div class="big-balloon" id="balloon" aria-hidden="true">
+    <svg viewBox="0 0 200 300"><path d="M100 236c0 20-14 26-8 40s-4 22 0 24" fill="none" stroke="#6B7A99" stroke-width="2"/><ellipse cx="100" cy="112" rx="86" ry="104" fill="url(#bal)"/><path d="M90 214h20l-10 14z" fill="#F0563A"/><ellipse cx="62" cy="66" rx="16" ry="30" fill="#fff" opacity=".45" transform="rotate(24 62 66)"/><text x="100" y="152" text-anchor="middle" class="b5" data-t="age"></text></svg>
+    <span class="pop">POP!</span>
+  </div>
+  <div class="front" aria-hidden="true"><svg class="fc l"><use href="#cloud"/></svg><svg class="fc r"><use href="#cloud"/></svg></div>
+  <p class="g-hint"><svg><use href="#i-balloon"/></svg><span data-i18n="tapHint"></span></p>
+</div>
+<script>try{document.getElementById("gate").hidden=false;document.documentElement.classList.add("gated")}catch(e){}</script>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap hero-in">
+      <p class="kicker hx" style="--d:.1">Birthday party</p>
+      <div class="badge hx" style="--d:.25;--hx:hx-drop">
+        <span class="dash" aria-hidden="true"></span>
+        <div class="badge-photo kb" data-photo="hero" data-tap="confetti"></div>
+        <b class="age-bubble" data-t="age"></b>
+      </div>
+      <h1 class="headline" data-letters="headline"></h1>
+      <div class="chips hx" style="--d:1.4"><span class="chip c1" data-t="weekday"></span><span class="chip c2"><b data-t="dayNum"></b> <span data-t="month"></span></span><span class="chip c3"><svg><use href="#i-clock"/></svg><span data-t="time"></span></span></div>
+      <p class="where hx" style="--d:1.6"><svg><use href="#i-pin"/></svg><span data-t="city"></span></p>
+      <p class="lead hx" style="--d:1.8" data-t="lead"></p>
+      <div class="ctas hx" style="--d:2" data-ctas></div>
+    </div>
+  </header>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="band">
+    <div class="wrap">
+      <div class="head" data-anim="zoom"><span class="tag">⏰</span><h2 data-i18n="cdTitle"></h2></div>
+      <div class="count" id="count" data-anim="up"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM ============ -->
+  <section class="band" data-section="events">
+    <div class="wrap">
+      <div class="head" data-anim="zoom"><span class="tag">🎈</span><h2 data-i18n="dayTitle"></h2></div>
+      <ol class="program" id="day"></ol>
+    </div>
+  </section>
+
+  <!-- ============ DETAILS ============ -->
+  <section class="band" data-section="details">
+    <div class="wrap">
+      <div class="head" data-anim="zoom"><span class="tag">⭐</span><h2 data-i18n="detailsTitle"></h2></div>
+      <div class="details" id="details"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="band" data-section="photos">
+    <div class="wrap">
+      <div class="head" data-anim="zoom"><span class="tag">📸</span><h2 data-i18n="galTitle"></h2></div>
+      <ul class="stickers" id="gallery"></ul>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="band" id="rsvp">
+    <div class="wrap">
+      <div class="head" data-anim="zoom"><span class="tag">💌</span><h2 data-i18n="rsvpTitle"></h2></div>
+      <div class="rsvp card" id="rsvp-box" data-anim="up"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" data-anim="up">
+    <p class="toast" data-t="toast"></p>
+    <p class="sign" data-t="script"></p>
+    <p class="when" data-t="dots"></p>
+    <p class="brand" data-i18n="brand"></p>
+  </div>
+  <svg class="hills" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true"><use href="#hills"/></svg>
+</footer>
+
+<template id="tpl-event"><li class="ev" data-anim="zoom"><span class="ev-ic"><svg data-f="icon"><use href="#i-star"/></svg></span><div class="ev-body"><span class="ev-time" data-f="time"></span><h3 data-f="title"></h3><p data-f="place"></p><a class="ev-map" data-f="map"><svg><use href="#i-pin"/></svg><span data-f="maptext"></span></a></div><div class="ev-pic" data-f="photo"></div></li></template>
+<template id="tpl-detail"><div class="detail" data-anim="up"><span class="d-ic"><svg data-f="icon"><use href="#i-star"/></svg></span><div><h3 data-f="label"></h3><p data-f="value"></p></div></div></template>
+<template id="tpl-photo"><li class="sticker" data-anim="zoom" data-tap="confetti"><div class="st-in kb" data-f="photo"></div></li></template>
+
+<script src="js/config.js"></script>
+<script src="../../assets/core/js/i18n.js"></script>
+<script src="../../assets/core/js/icons.js"></script>
+<script src="../../assets/core/js/fx.js"></script>
+<script src="../../assets/core/js/music.js"></script>
+<script src="../../assets/core/js/core.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F1E6FF"/><stop offset="1" stop-color="#FFE3EE"/></linearGradient>
+<linearGradient id="c1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3E3F7"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF6D8"/><stop offset=".5" stop-color="#F5C451"/><stop offset="1" stop-color="#C98A1E"/></linearGradient>
+</defs>
+<rect width="300" height="400" fill="url(#bg)"/>
+<ellipse cx="150" cy="352" rx="110" ry="14" fill="#D8C4EE"/>
+<rect x="56" y="250" width="188" height="100" rx="10" fill="url(#c1)" stroke="#E2CDEB"/>
+<rect x="80" y="180" width="140" height="74" rx="10" fill="url(#c1)" stroke="#E2CDEB"/>
+<path d="M56 268c16 12 31 12 47 0s31-12 47 0 31 12 47 0 31-12 47 0" fill="none" stroke="#FF8FB1" stroke-width="6" stroke-linecap="round"/>
+<path d="M80 196c12 10 23 10 35 0s23-10 35 0 23 10 35 0 23-10 35 0" fill="none" stroke="#A98BFF" stroke-width="5" stroke-linecap="round"/>
+<g fill="#8EE3C8"><circle cx="90" cy="310" r="5"/><circle cx="130" cy="320" r="5"/><circle cx="170" cy="310" r="5"/><circle cx="210" cy="320" r="5"/></g>
+<text x="150" y="150" text-anchor="middle" font-family="Bodoni Moda, Georgia, serif" font-style="italic" font-weight="900" font-size="96" fill="url(#gold)">30</text>
+<g stroke="#E2CDEB" stroke-width="3"><path d="M100 180v-16M130 180v-20M170 180v-20M200 180v-16"/></g>
+<g fill="#FFC56E"><path d="M100 164c4-6 4-10 0-16-4 6-4 10 0 16z"/><path d="M130 160c4-6 4-10 0-16-4 6-4 10 0 16z"/><path d="M170 160c4-6 4-10 0-16-4 6-4 10 0 16z"/><path d="M200 164c4-6 4-10 0-16-4 6-4 10 0 16z"/></g>
+<g fill="#FFFFFF"><path d="M40 60l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M256 90l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
+</svg>

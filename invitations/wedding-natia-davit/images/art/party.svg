@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A1840"/><stop offset="1" stop-color="#5A3480"/></linearGradient>
+<radialGradient id="ball" cx=".35" cy=".35"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#C9C3E6"/><stop offset="1" stop-color="#6C5E99"/></radialGradient>
+</defs>
+<rect width="200" height="200" fill="url(#bg)"/>
+<path d="M100 0v40" stroke="#B9B3D6" stroke-width="2"/>
+<circle cx="100" cy="62" r="24" fill="url(#ball)"/>
+<g stroke="#5A4E86" stroke-width=".8" opacity=".7"><path d="M76 62h48M78 52h44M78 72h44M84 44h32M84 80h32M100 38v48M90 40v44M110 40v44"/></g>
+<g opacity=".5"><path d="M100 62L20 200H60Z" fill="#FF8FB1"/><path d="M100 62L180 200H140Z" fill="#7FC8FF"/><path d="M100 62L90 200H120Z" fill="#8EE3C8"/></g>
+<rect y="160" width="200" height="40" fill="#1E1030"/>
+<g fill="#FFC56E"><circle cx="30" cy="30" r="2"/><circle cx="170" cy="40" r="2"/><circle cx="150" cy="110" r="2"/><circle cx="40" cy="120" r="2"/></g>
+<g fill="#2E1E46"><rect x="40" y="140" width="40" height="22" rx="4"/><rect x="120" y="140" width="40" height="22" rx="4"/></g>
+<g fill="#FFF6D8"><path d="M54 132h12l-2 8h-8z"/><path d="M134 132h12l-2 8h-8z"/></g>
+</svg>

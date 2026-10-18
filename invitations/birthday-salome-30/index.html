@@ -1,0 +1,128 @@
+<!doctype html>
+<!-- ამბავი · მოსაწვევი „birthday-salome-30“
+     ტექსტები და მონაცემები: js/config.js · დიზაინის სტილი: css/theme.css · ილუსტრაციები: images/art/
+     საერთო ძრავა (ენა, მუსიკა, ეფექტები, უკუთვლა, RSVP): js/core.js ... ან საიტზე assets/core/ -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>სალომე 30 · დაბადების დღის წვეულება</title>
+<meta name="description" content="სალომეს 30 წლის იუბილე · 12 დეკემბერი 2026, თბილისი">
+<meta name="theme-color" content="#2A1840">
+<meta property="og:title" content="სალომე · 30 · 12.12.2026">
+<meta property="og:description" content="დაბადების დღის მოსაწვევი">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Pacifico&family=Noto+Sans+Georgian:wdth,wght@62.5..100,300..800&display=swap">
+<link rel="stylesheet" href="../../assets/core/css/base.css">
+<link rel="stylesheet" href="css/theme.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true"></div>
+
+<!-- ============ GATE: gift box ============ -->
+<div class="gate" id="gate" role="button" tabindex="0" aria-label="მოსაწვევის გახსნა"
+     data-stages="s1:0,s2:450,s3:950,s4:2300" data-open="3000" data-burst="1000:confetti:#gift:160;1100:fireworks::4" hidden>
+  <div class="spots" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="disco" aria-hidden="true"></div>
+  <div class="g-text">
+    <span class="g-script holo">It's party time</span>
+    <span class="g-names"><span data-t="host"></span> · <span data-t="age"></span></span>
+    <span class="g-date" data-t="dots"></span>
+  </div>
+  <div class="gift" id="gift" aria-hidden="true">
+    <div class="nums"><span class="holo-num">3</span><span class="holo-num">0</span></div>
+    <div class="g-box"></div>
+    <div class="g-lid"><div class="bow"><i class="loop l"></i><i class="loop r"></i><i class="tail l"></i><i class="tail r"></i><i class="knot"></i></div></div>
+  </div>
+  <p class="g-hint"><svg><use href="#i-gift"/></svg><span data-i18n="tapHint"></span></p>
+</div>
+<script>try{document.getElementById("gate").hidden=false;document.documentElement.classList.add("gated")}catch(e){}</script>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap hero-in">
+      <p class="kicker hx" style="--d:.1">Birthday party</p>
+      <div class="stage hx" style="--d:.25;--hx:hx-zoom">
+        <b class="big-age holo" data-t="age" aria-hidden="true"></b>
+        <div class="blob-photo kb" data-photo="hero" data-tap="confetti"></div>
+        <span class="sticker s1">✦</span><span class="sticker s2">✶</span><span class="sticker s3">✦</span>
+      </div>
+      <h1 class="script-name holo hx" style="--d:.7" data-t="script"></h1>
+      <p class="geo-name" data-letters="host" style="--ch0:1s"></p>
+      <p class="age-line hx" style="--d:1.3" data-t="ageLine"></p>
+      <div class="glass-date hx" style="--d:1.5"><span data-t="weekday"></span><b data-t="dayNum"></b><span><span data-t="month"></span> <span data-t="year"></span></span></div>
+      <p class="where hx" style="--d:1.7"><svg><use href="#i-pin"/></svg><span data-t="city"></span> · <span data-t="time"></span></p>
+      <p class="lead hx" style="--d:1.9" data-t="lead"></p>
+      <div class="ctas hx" style="--d:2.1" data-ctas></div>
+    </div>
+  </header>
+
+  <div class="marquee" aria-hidden="true"><div class="mq-track"><span data-t="marquee"></span><span data-t="marquee"></span><span data-t="marquee"></span><span data-t="marquee"></span></div></div>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="band">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script holo">Countdown</span><h2 data-i18n="cdTitle"></h2></div>
+      <div class="count" id="count" data-anim="zoom"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM ============ -->
+  <section class="band" data-section="events">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script holo">The plan</span><h2 data-i18n="dayTitle"></h2></div>
+      <ol class="program" id="day"></ol>
+    </div>
+  </section>
+
+  <!-- ============ DETAILS ============ -->
+  <section class="band" data-section="details">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script holo">Good to know</span><h2 data-i18n="detailsTitle"></h2></div>
+      <div class="details" id="details"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="band" data-section="photos">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script holo">Memories</span><h2 data-i18n="galTitle"></h2></div>
+      <ul class="bento" id="gallery"></ul>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="band" id="rsvp">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script holo">Are you in?</span><h2 data-i18n="rsvpTitle"></h2></div>
+      <div class="rsvp glass" id="rsvp-box" data-anim="up"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" data-anim="up">
+    <b class="foot-age" data-t="age"></b>
+    <p class="toast" data-t="toast"></p>
+    <p class="sign holo" data-t="script"></p>
+    <p class="when" data-t="dots"></p>
+    <p class="brand" data-i18n="brand"></p>
+  </div>
+</footer>
+
+<template id="tpl-event"><li class="ev" data-anim="up"><span class="ev-time" data-f="time"></span><div class="ev-card"><span class="ev-ic"><svg data-f="icon"><use href="#i-star"/></svg></span><div class="ev-body"><h3 data-f="title"></h3><p data-f="place"></p><a class="ev-map" data-f="map"><svg><use href="#i-pin"/></svg><span data-f="maptext"></span></a></div><div class="ev-pic" data-f="photo"></div></div></li></template>
+<template id="tpl-detail"><div class="detail glass" data-anim="flip"><span class="d-ic"><svg data-f="icon"><use href="#i-star"/></svg></span><h3 data-f="label"></h3><p data-f="value"></p></div></template>
+<template id="tpl-photo"><li class="tile" data-anim="zoom" data-tap="confetti"><div class="tile-in kb" data-f="photo"></div></li></template>
+
+<script src="js/config.js"></script>
+<script src="../../assets/core/js/i18n.js"></script>
+<script src="../../assets/core/js/icons.js"></script>
+<script src="../../assets/core/js/fx.js"></script>
+<script src="../../assets/core/js/music.js"></script>
+<script src="../../assets/core/js/core.js"></script>
+</body>
+</html>

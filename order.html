@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- ამბავი · შეკვეთა — ფორმა, რომელიც შეკვეთას WhatsApp-ის შეტყობინებად აწყობს (ლოგიკა: site.js → order form) -->
+<html lang="ka" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>შეკვეთა · ამბავი</title>
+<meta name="description" content="შეუკვეთეთ ციფრული მოსაწვევი: შეავსეთ ფორმა და გამოგვიგზავნეთ WhatsApp-ში. მზადდება 5 დღეში.">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" href="assets/site/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Noto+Serif+Georgian:wght@300;400;500;600&family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/site/css/site.css">
+<script>document.documentElement.classList.remove("no-js")</script>
+</head>
+<body data-page="order">
+
+<!-- ===== მენიუ: ყველა გვერდზე ერთნაირია; მიმდინარე გვერდს site.js აღნიშნავს (body data-page) ===== -->
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><b>ამბავი</b><i>invitations</i></a>
+    <button class="burger" type="button" aria-label="მენიუ" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="index.html" data-page="home">მთავარი</a>
+      <a href="designs.html" data-page="designs">დიზაინები</a>
+      <a href="features.html" data-page="features">რა შედის</a>
+      <a href="how.html" data-page="how">როგორ მუშაობს</a>
+      <a href="prices.html" data-page="prices">ფასები</a>
+      <a href="faq.html" data-page="faq">კითხვები</a>
+      <a class="btn dark" href="order.html" data-page="order">შეკვეთა</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== შეკვეთა ===== -->
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">მთავარი</a><span>/</span><span>შეკვეთა</span></p>
+      <span class="k">Order</span>
+      <h1>შეკვეთა</h1>
+      <p>შეავსეთ მოკლე ფორმა და გამოგვიგზავნეთ WhatsApp-ში. მოსაწვევი მზადდება <span class="js-days">5</span> დღეში.</p>
+    </div>
+  </section>
+
+  <!-- ===== შეკვეთის ფორმა და გვერდითი ინფორმაცია ===== -->
+  <section class="block alt">
+    <div class="wrap order">
+      <div>
+        <form class="form reveal" id="order-form" novalidate>
+          <div class="row2">
+            <div class="field"><label for="o-name">თქვენი სახელი</label><input class="input" id="o-name" type="text" autocomplete="name" placeholder="მაგ. ნინო"></div>
+            <div class="field"><label for="o-phone">ტელეფონი <span class="opt">(არასავალდებულო)</span></label><input class="input" id="o-phone" type="tel" autocomplete="tel" placeholder="5XX XX XX XX"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="o-type">ღონისძიება</label><select class="select" id="o-type"><option value="">აირჩიეთ</option></select></div>
+            <div class="field"><label for="o-date">თარიღი <span class="opt">(არასავალდებულო)</span></label><input class="input" id="o-date" type="date"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="o-design">დიზაინი</label><select class="select" id="o-design"><option value="">ჯერ არ ვიცი</option></select></div>
+            <div class="field"><label for="o-pack">პაკეტი</label><select class="select" id="o-pack"><option value="">ჯერ არ ვიცი</option></select></div>
+          </div>
+          <div class="field"><label for="o-msg">დამატებით <span class="opt">(არასავალდებულო)</span></label><textarea class="textarea" id="o-msg" placeholder="სახელები, ადგილი, ფერები, იდეები..."></textarea></div>
+          <p class="ready" id="o-ready"><svg><use href="#s-clock"/></svg><span></span></p>
+          <p class="err" id="o-err" hidden>გთხოვთ, ჩაწეროთ სახელი და აირჩიოთ ღონისძიება.</p>
+          <button class="btn wa full" type="submit"><svg class="i"><use href="#s-wa"/></svg>გაგზავნა WhatsApp-ით</button>
+        </form>
+        <div class="form sent" id="o-done" hidden>
+          <span class="ok"><svg><use href="#s-check"/></svg></span>
+          <h3>თითქმის მზადაა!</h3>
+          <p>WhatsApp გაიხსნა თქვენი შეტყობინებით. თუ არ გაიხსნა, დააჭირეთ ღილაკს ან დააკოპირეთ ტექსტი.</p>
+          <pre class="ready" id="o-preview" style="white-space:pre-wrap;text-align:left;font:inherit;margin:0"></pre>
+          <div class="ctas" style="justify-content:center"><a class="btn wa" id="o-send" href="#" target="_blank" rel="noopener"><svg class="i"><use href="#s-wa"/></svg>გაგზავნა</a><button class="btn line" type="button" id="o-copy"><svg class="i"><use href="#s-copy"/></svg><span>კოპირება</span></button></div>
+          <button class="btn line" type="button" id="o-again" style="margin:6px auto 0">ფორმის შეცვლა</button>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="box reveal"><h3>რა მოხდება შემდეგ?</h3><p>დღესვე გიპასუხებთ და დავაზუსტებთ დეტალებს. მე-4 დღეს მიიღებთ პირველ ვერსიას, მე-5 დღეს კი მზა ბმულს.</p><p style="margin-top:14px"><span class="days-badge"><b class="js-days">5</b><span>დღე<small>მზად იქნება <span class="js-ready"></span>-ს</small></span></span></p></div>
+        <div class="box reveal"><h3>რა მოამზადოთ</h3><p>სახელები, თარიღი, დრო და ადგილები მისამართებით, WhatsApp ნომერი პასუხებისთვის და, სურვილისამებრ, ფოტოები და თქვენი ისტორია.</p></div>
+        <div class="box reveal"><h3>კონტაქტი</h3><p>მოგვწერეთ პირდაპირ:</p><div class="contacts"><a class="btn wa js-wa" href="#"><svg class="i"><use href="#s-wa"/></svg>WhatsApp</a><a class="btn line js-insta" href="#"><svg class="i"><use href="#s-insta"/></svg>Instagram</a><a class="btn line js-fb" href="#"><svg class="i"><use href="#s-fb"/></svg>Facebook</a><a class="btn line js-mail" href="#"><svg class="i"><use href="#s-mail"/></svg>ელფოსტა</a></div></div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<!-- ===== ფეხი: გვერდები და კონტაქტები (კონტაქტებს data.js ავსებს, ცარიელი ბმული იმალება) ===== -->
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div><a class="logo" href="index.html"><b>ამბავი</b><i>invitations</i></a><p>ციფრული მოსაწვევები ქორწილისთვის, ნიშნობისთვის, დაბადების დღისთვის და ნათლობისთვის. მზადდება <span class="js-days">5</span> დღეში.</p></div>
+    <div><h4>გვერდები</h4><nav><a href="designs.html">დიზაინები</a><a href="features.html">რა შედის</a><a href="how.html">როგორ მუშაობს</a><a href="prices.html">ფასები</a><a href="faq.html">კითხვები</a></nav></div>
+    <div><h4>კონტაქტი</h4><nav><a href="order.html">შეკვეთის ფორმა</a><a class="js-wa" href="#">WhatsApp</a><a class="js-insta" href="#">Instagram</a><a class="js-fb" href="#">Facebook</a><a class="js-mail" href="#">ელფოსტა</a></nav></div>
+  </div>
+  <p class="copy">© <span class="js-year"></span> ამბავი · ციფრული მოსაწვევები</p>
+</footer>
+
+<!-- სკრიპტები: data.js — მონაცემები (კონტაქტები, დიზაინები, ფასები), site.js — საიტის ლოგიკა -->
+<script src="assets/site/js/data.js"></script>
+<script src="assets/site/js/site.js"></script>
+</body>
+</html>

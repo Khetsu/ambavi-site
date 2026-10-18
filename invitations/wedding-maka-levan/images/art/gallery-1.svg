@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F9EDE3"/><stop offset="1" stop-color="#F1DDD3"/></linearGradient>
+<radialGradient id="p1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3CFC7"/></radialGradient>
+<radialGradient id="p2"><stop offset="0" stop-color="#F9DCD5"/><stop offset="1" stop-color="#DFA39B"/></radialGradient></defs>
+<rect width="400" height="400" fill="url(#bg)"/>
+<g stroke="#8FA382" stroke-width="5" stroke-linecap="round" fill="none"><path d="M200 400V260M200 300C170 270 150 250 130 230M200 300C230 270 250 250 270 230"/></g>
+<g fill="#9DB08C"><ellipse cx="120" cy="230" rx="30" ry="11" transform="rotate(-35 120 230)"/><ellipse cx="280" cy="230" rx="30" ry="11" transform="rotate(35 280 230)"/><ellipse cx="160" cy="270" rx="28" ry="10" transform="rotate(-20 160 270)"/><ellipse cx="240" cy="270" rx="28" ry="10" transform="rotate(20 240 270)"/><ellipse cx="200" cy="180" rx="28" ry="10" transform="rotate(90 200 180)"/></g>
+<g><circle cx="200" cy="170" r="62" fill="url(#p1)" stroke="#EBC8BF"/><circle cx="200" cy="170" r="44" fill="url(#p1)" stroke="#EBC8BF"/><circle cx="200" cy="170" r="26" fill="url(#p1)" stroke="#E7BDB2"/><circle cx="200" cy="170" r="9" fill="#EBC98B"/>
+<circle cx="120" cy="215" r="44" fill="url(#p2)" stroke="#D99B92"/><circle cx="120" cy="215" r="30" fill="url(#p2)" stroke="#D99B92"/><circle cx="120" cy="215" r="14" fill="#F4D3CB"/>
+<circle cx="282" cy="212" r="46" fill="url(#p1)" stroke="#EBC8BF"/><circle cx="282" cy="212" r="30" fill="url(#p1)" stroke="#E7BDB2"/><circle cx="282" cy="212" r="12" fill="#EBC98B"/>
+<circle cx="170" cy="250" r="30" fill="url(#p2)" stroke="#D99B92"/><circle cx="230" cy="252" r="28" fill="url(#p1)" stroke="#EBC8BF"/></g>
+<g fill="#C9D3BE"><circle cx="70" cy="150" r="9"/><circle cx="330" cy="160" r="9"/><circle cx="92" cy="110" r="6"/><circle cx="312" cy="112" r="6"/></g>
+<path d="M200 300l-30 60 30-14 30 14z" fill="#F4E2B6" stroke="#C9A867"/><path d="M190 300h20v18h-20z" fill="#E9CE8F"/>
+</svg>

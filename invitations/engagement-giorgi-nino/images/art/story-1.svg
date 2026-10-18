@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7E3D6"/><stop offset="1" stop-color="#EFD0BF"/></linearGradient>
+<linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDEAF2"/><stop offset="1" stop-color="#F5EADF"/></linearGradient>
+</defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<rect x="40" y="26" width="320" height="150" rx="8" fill="url(#win)" stroke="#C9A58E" stroke-width="5"/>
+<path d="M200 26v150" stroke="#C9A58E" stroke-width="4"/>
+<g fill="#A9C2A0"><ellipse cx="80" cy="150" rx="22" ry="16"/><ellipse cx="320" cy="146" rx="24" ry="18"/><circle cx="96" cy="136" r="10" fill="#BED3B4"/></g>
+<g fill="#C8B2A6" opacity=".7"><rect x="230" y="70" width="40" height="80"/><rect x="276" y="90" width="30" height="60"/><rect x="120" y="80" width="34" height="70"/></g>
+<rect y="196" width="400" height="104" fill="#B88364"/>
+<rect y="190" width="400" height="12" fill="#A06E52"/>
+<g><path d="M118 214h52l-6 46c-1 6-6 10-12 10h-16c-6 0-11-4-12-10z" fill="#FFFFFF" stroke="#E6D3C6"/><ellipse cx="144" cy="214" rx="26" ry="6" fill="#D9A27A"/><path d="M134 212c4-4 16-4 20 0-4 3-16 3-20 0z" fill="#FFF2E2"/><path d="M170 226c14 0 14 22 0 22" fill="none" stroke="#E6D3C6" stroke-width="5"/><ellipse cx="144" cy="272" rx="40" ry="7" fill="#FFFFFF" stroke="#E6D3C6"/></g>
+<g><path d="M236 226h34l-4 32c-1 5-5 8-10 8h-6c-5 0-9-3-10-8z" fill="#FFFFFF" stroke="#E6D3C6"/><ellipse cx="253" cy="226" rx="17" ry="4" fill="#5A3826"/><path d="M270 234c10 0 10 16 0 16" fill="none" stroke="#E6D3C6" stroke-width="4"/><ellipse cx="253" cy="272" rx="30" ry="6" fill="#FFFFFF" stroke="#E6D3C6"/></g>
+<g fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".8"><path d="M138 200c-6-10 6-14 0-24M150 200c-6-10 6-14 0-24"/><path d="M250 214c-5-8 5-12 0-20"/></g>
+<path d="M200 168c-10-14-30-4-20 10 6 8 20 14 20 14s14-6 20-14c10-14-10-24-20-10z" fill="#E58FA2" opacity=".85"/>
+</svg>

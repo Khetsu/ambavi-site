@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7E4DE"/><stop offset="1" stop-color="#EBCFC8"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBEBB8"/><stop offset=".5" stop-color="#C39B47"/><stop offset="1" stop-color="#F3DB97"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<path d="M0 220C80 170 140 250 220 200S340 150 400 190V300H0Z" fill="#FBF1EC" opacity=".9"/>
+<path d="M0 260C100 220 160 290 250 240S350 220 400 250V300H0Z" fill="#F4DDD6" opacity=".9"/>
+<path d="M0 120C90 80 150 150 230 100S330 60 400 100" fill="none" stroke="#fff" stroke-width="3" opacity=".6"/>
+<g transform="translate(200 175)" fill="none"><ellipse cx="-34" cy="6" rx="40" ry="14" fill="#C99B8F" opacity=".25"/><circle cx="-30" r="42" stroke="url(#gold)" stroke-width="10"/><circle cx="30" r="42" stroke="url(#gold)" stroke-width="10"/><circle cx="-30" r="42" stroke="#FFF7D8" stroke-width="1.6" stroke-dasharray="26 240" transform="rotate(-50 -30 0)"/><circle cx="30" r="42" stroke="#FFF7D8" stroke-width="1.6" stroke-dasharray="26 240" transform="rotate(-50 30 0)"/>
+<path d="M18 -52l10-12 10 12-10 10z" fill="#FFFFFF" stroke="#C6D3E6" stroke-width="1.4"/></g>
+<g fill="#FFFFFF"><path d="M320 70l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M80 90l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
+</svg>

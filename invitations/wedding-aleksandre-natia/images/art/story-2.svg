@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320"><rect width="400" height="320" fill="#ECE6DB"/><g fill="none" stroke="#121212" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M0 238C80 226 160 248 240 236S360 224 400 232"/><path d="M0 252C80 240 160 262 240 250S360 238 400 246" stroke-opacity=".4"/>
+<path d="M250 236V58M250 58l-8 40h16zM242 98l-14 66h44l-14-66M228 164l-22 72M272 164l22 72M214 210c10-16 62-16 72 0M222 130h56M236 98h28"/>
+<path d="M20 236c10-30 40-30 50 0M70 236c10-30 40-30 50 0M120 236c10-30 40-30 50 0M10 206h170"/>
+<path d="M340 236V150M332 150h16l-2-12h-12z"/><circle cx="340" cy="144" r="10" stroke="#6E1F2B" stroke-opacity=".5"/>
+<path d="M96 196c0-26 36-26 36 0z" fill="#6E1F2B" stroke="#6E1F2B"/><path d="M114 196v26q0 6 6 6"/>
+<circle cx="108" cy="208" r="6"/><path d="M108 214v24M108 222l-8 10M120 208v30"/><circle cx="122" cy="202" r="6"/>
+<g stroke-opacity=".35"><path d="M30 30l-6 16M70 40l-6 16M110 24l-6 16M150 44l-6 16M190 28l-6 16M300 30l-6 16M350 40l-6 16M380 20l-6 16M50 80l-6 16M170 90l-6 16M320 92l-6 16"/></g>
+</g></svg>

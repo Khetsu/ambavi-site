@@ -1,0 +1,163 @@
+<!doctype html>
+<!-- ამბავი · მოსაწვევი „christening-elene“
+     ტექსტები და მონაცემები: js/config.js · დიზაინის სტილი: css/theme.css · ილუსტრაციები: images/art/
+     საერთო ძრავა (ენა, მუსიკა, ეფექტები, უკუთვლა, RSVP): js/core.js ... ან საიტზე assets/core/ -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ელენეს ნათლობა · მოსაწვევი</title>
+<meta name="description" content="ელენეს ნათლობა · 6 ივნისი 2027, თბილისი">
+<meta name="theme-color" content="#EAF3FC">
+<meta property="og:title" content="ელენეს ნათლობა · 06.06.2027">
+<meta property="og:description" content="ნათლობის მოსაწვევი">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+Georgian:wght@200;300;400;500&family=Noto+Sans+Georgian:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../../assets/core/css/base.css">
+<link rel="stylesheet" href="css/theme.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBF6EC"/><stop offset="1" stop-color="#E7DCC6"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF3CF"/><stop offset=".5" stop-color="#D9B26A"/><stop offset="1" stop-color="#A9823F"/></linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3DC94"/><stop offset="1" stop-color="#C9A15B"/></linearGradient>
+  </defs>
+  <!-- Bolnisi-style cross -->
+  <symbol id="bcross" viewBox="0 0 40 40"><path d="M15 2h10l-3 12 12-3v10l-12-3 3 12H15l3-12-12 3V11l12 3z" fill="url(#gold)" stroke="#A9823F" stroke-width=".8"/><circle cx="20" cy="20" r="2.4" fill="#FFF6DD"/></symbol>
+  <!-- ornamental divider -->
+  <symbol id="orn" viewBox="0 0 260 30">
+    <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M0 15H100M160 15H260" stroke-opacity=".5"/><path d="M100 15c8-10 16-10 20 0M160 15c-8-10-16-10-20 0M100 15c8 10 16 10 20 0M160 15c-8 10-16 10-20 0"/></g>
+    <path d="M126 6h8l-2 6 6-2v8l-6-2 2 6h-8l2-6-6 2v-8l6 2z" fill="currentColor" fill-opacity=".8"/>
+  </symbol>
+  <!-- church portal with carved stone arch -->
+  <symbol id="portal" viewBox="0 0 240 330">
+    <path d="M20 330V130A100 100 0 0 1 220 130V330Z" fill="url(#stone)" stroke="#CDBA94" stroke-width="2"/>
+    <path d="M36 330V132A84 84 0 0 1 204 132V330" fill="none" stroke="#D8C7A2" stroke-width="10" stroke-dasharray="2 12" stroke-linecap="round"/>
+    <path d="M48 330V134A72 72 0 0 1 192 134V330" fill="none" stroke="#C9B68D" stroke-width="2"/>
+    <path d="M58 330V136A62 62 0 0 1 182 136V330Z" fill="#7A5638"/>
+    <path d="M0 330h240v-8H0z" fill="#E1D5BC"/>
+  </symbol>
+  <symbol id="dove-art" viewBox="0 0 140 100">
+    <g class="wing-b"><path d="M70 46C58 20 34 6 10 8c16 10 26 24 34 40z" fill="#E6EEF7"/></g>
+    <path d="M28 58c14-2 26-6 38-14 12-8 26-10 38-6 8 2 14 8 16 14l12 2-10 5c-4 14-20 24-40 24-12 0-24-4-32-10L18 82l8-16c-4-2-2-8 2-8z" fill="#FFFFFF" stroke="#C9D6E6" stroke-width="1.2"/>
+    <circle cx="108" cy="50" r="2" fill="#2F3E55"/>
+    <g class="wing-f"><path d="M72 48C66 18 50 0 30 0c10 14 14 30 14 50z" fill="#FFFFFF" stroke="#C9D6E6" stroke-width="1.2"/></g>
+    <path d="M120 56c8 2 14 6 16 12" fill="none" stroke="#7FA36B" stroke-width="2"/><g fill="#9BBF84"><ellipse cx="128" cy="60" rx="5" ry="2.5" transform="rotate(30 128 60)"/><ellipse cx="134" cy="66" rx="5" ry="2.5" transform="rotate(60 134 66)"/></g>
+  </symbol>
+</svg>
+
+<div class="heaven" aria-hidden="true"><i class="rays"></i><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i></div>
+
+<!-- ============ GATE: church doors and a dove ============ -->
+<div class="gate" id="gate" role="button" tabindex="0" aria-label="მოსაწვევის გახსნა"
+     data-stages="s1:0,s2:600,s3:1450,s4:2700" data-open="3400" data-burst="1500:feathers:#dove:16;1550:sparkle:#portal-door:36" hidden>
+  <div class="g-text">
+    <span class="g-script">Holy Baptism</span>
+    <span class="g-names" data-t="headline"></span>
+    <span class="g-date" data-t="dots"></span>
+  </div>
+  <div class="portal" aria-hidden="true">
+    <svg class="p-cross"><use href="#bcross"/></svg>
+    <div class="p-door" id="portal-door"><div class="p-light"></div><i class="pd l"></i><i class="pd r"></i></div>
+    <svg class="p-frame" viewBox="0 0 240 330"><use href="#portal"/></svg>
+  </div>
+  <svg class="dove" id="dove" viewBox="0 0 140 100" aria-hidden="true">
+    <path class="wing-b" d="M70 46C58 20 34 6 10 8c16 10 26 24 34 40z" fill="#E6EEF7"/>
+    <path d="M28 58c14-2 26-6 38-14 12-8 26-10 38-6 8 2 14 8 16 14l12 2-10 5c-4 14-20 24-40 24-12 0-24-4-32-10L18 82l8-16c-4-2-2-8 2-8z" fill="#FFFFFF" stroke="#C9D6E6" stroke-width="1.2"/>
+    <circle cx="108" cy="50" r="2" fill="#2F3E55"/>
+    <path class="wing-f" d="M72 48C66 18 50 0 30 0c10 14 14 30 14 50z" fill="#FFFFFF" stroke="#C9D6E6" stroke-width="1.2"/>
+    <path d="M120 56c8 2 14 6 16 12" fill="none" stroke="#7FA36B" stroke-width="2"/><g fill="#9BBF84"><ellipse cx="128" cy="60" rx="5" ry="2.5" transform="rotate(30 128 60)"/><ellipse cx="134" cy="66" rx="5" ry="2.5" transform="rotate(60 134 66)"/></g>
+  </svg>
+  <p class="g-hint"><svg><use href="#i-cross"/></svg><span data-i18n="tapHint"></span></p>
+  <div class="flash" aria-hidden="true"></div>
+</div>
+<script>try{document.getElementById("gate").hidden=false;document.documentElement.classList.add("gated")}catch(e){}</script>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap hero-in">
+      <svg class="hero-cross hx" style="--d:.1"><use href="#bcross"/></svg>
+      <p class="kicker hx" style="--d:.2">Holy Baptism</p>
+      <div class="halo hx" style="--d:.35;--hx:hx-zoom">
+        <span class="glow"></span><span class="hring"></span>
+        <div class="oval kb" data-photo="hero"></div>
+      </div>
+      <p class="script-name hx" style="--d:.8" data-t="script"></p>
+      <h1 class="headline" data-letters="headline" style="--ch0:1.1s"></h1>
+      <p class="verse hx" style="--d:1.6" data-t="verse"></p>
+      <svg class="orn hx" style="--d:1.7"><use href="#orn"/></svg>
+      <div class="date hx" style="--d:1.8"><span data-t="weekday"></span><b data-t="dayNum"></b><span><span data-t="month"></span> <span data-t="year"></span></span></div>
+      <p class="where hx" style="--d:1.95"><svg><use href="#i-pin"/></svg><span data-t="city"></span></p>
+      <p class="lead hx" style="--d:2.1" data-t="lead"></p>
+      <div class="ctas hx" style="--d:2.3" data-ctas></div>
+    </div>
+  </header>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="band veil">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Save the date</span><h2 data-i18n="cdTitle"></h2><svg class="orn"><use href="#orn"/></svg></div>
+      <div class="count" id="count" data-rings data-anim="blur"></div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="band" data-section="events">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">The blessed day</span><h2 data-i18n="dayTitle"></h2><svg class="orn"><use href="#orn"/></svg></div>
+      <ol class="path" id="day"></ol>
+    </div>
+  </section>
+
+  <!-- ============ FAMILY / DETAILS ============ -->
+  <section class="band veil" data-section="details">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Our family</span><h2 data-i18n="detailsTitle"></h2><svg class="orn"><use href="#orn"/></svg></div>
+      <div class="family" id="details"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="band" data-section="photos">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Little moments</span><h2 data-i18n="galTitle"></h2><svg class="orn"><use href="#orn"/></svg></div>
+      <ul class="arches" id="gallery"></ul>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="band veil" id="rsvp">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Will you join us?</span><h2 data-i18n="rsvpTitle"></h2><svg class="orn"><use href="#orn"/></svg></div>
+      <div class="rsvp card" id="rsvp-box" data-anim="up"><svg class="card-cross"><use href="#bcross"/></svg></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" data-anim="up">
+    <svg class="foot-dove"><use href="#dove-art"/></svg>
+    <p class="toast" data-t="toast"></p>
+    <p class="sign" data-t="script"></p>
+    <p class="when" data-t="dots"></p>
+    <p class="brand" data-i18n="brand"></p>
+  </div>
+</footer>
+
+<template id="tpl-event"><li class="ev" data-anim="up"><div class="ev-pic" data-f="photo"></div><span class="ev-ic"><svg data-f="icon"><use href="#i-cross"/></svg></span><span class="ev-time" data-f="time"></span><h3 data-f="title"></h3><p data-f="place"></p><a class="ev-map" data-f="map"><svg><use href="#i-pin"/></svg><span data-f="maptext"></span></a></li></template>
+<template id="tpl-detail"><div class="person" data-anim="zoom"><span class="p-ic"><svg data-f="icon"><use href="#i-heart"/></svg></span><h3 data-f="label"></h3><p data-f="value"></p></div></template>
+<template id="tpl-photo"><li class="arch-item" data-anim="mask"><div class="arch-in kb" data-f="photo"></div></li></template>
+
+<script src="js/config.js"></script>
+<script src="../../assets/core/js/i18n.js"></script>
+<script src="../../assets/core/js/icons.js"></script>
+<script src="../../assets/core/js/fx.js"></script>
+<script src="../../assets/core/js/music.js"></script>
+<script src="../../assets/core/js/core.js"></script>
+</body>
+</html>

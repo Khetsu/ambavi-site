@@ -1,0 +1,169 @@
+<!doctype html>
+<!-- ამბავი · მოსაწვევი „wedding-aleksandre-natia“
+     ტექსტები და მონაცემები: js/config.js · დიზაინის სტილი: css/theme.css · ილუსტრაციები: images/art/
+     საერთო ძრავა (ენა, მუსიკა, ეფექტები, უკუთვლა, RSVP): js/core.js ... ან საიტზე assets/core/ -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ალექსანდრე & ნატია · 11 სექტემბერი 2027</title>
+<meta name="description" content="ალექსანდრე და ნატიას საქორწილო მოსაწვევი · 11 სექტემბერი 2027, თბილისი">
+<meta name="theme-color" content="#F3EFE7">
+<meta property="og:title" content="ალექსანდრე & ნატია · 11.09.2027">
+<meta property="og:description" content="საქორწილო მოსაწვევი">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Noto+Serif+Georgian:wght@300;400;500&family=Noto+Sans+Georgian:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../../assets/core/css/base.css">
+<link rel="stylesheet" href="css/theme.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- ============ GATE: a magazine cover that turns like a page ============ -->
+<div class="gate" id="gate" role="button" tabindex="0" aria-label="მოსაწვევის გახსნა"
+     data-stages="s1:0,s2:180" data-open="1500" hidden>
+  <div class="cover">
+    <div class="cv-top"><span>Vol. 01</span><span data-t="dots"></span><span data-t="city"></span></div>
+    <p class="cv-mast">The<br>Wedding</p>
+    <div class="cv-arch" aria-hidden="true"><b>&amp;</b></div>
+    <div class="cv-lines">
+      <p class="cv-names"><span data-t="first"></span> <i>&amp;</i> <span data-t="second"></span></p>
+      <p class="cv-issue" data-t="issue"></p>
+    </div>
+    <div class="cv-bottom"><span class="barcode" aria-hidden="true"></span><span class="cv-hint"><span data-i18n="tapHint"></span> →</span></div>
+  </div>
+</div>
+<script>try{document.getElementById("gate").hidden=false;document.documentElement.classList.add("gated")}catch(e){}</script>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="topbar wrap"><span class="tb-mono" data-t="monogram"></span><span class="tb-issue" data-t="issue"></span><span class="tb-date" data-t="dots"></span></div>
+    <div class="wrap hero-in">
+      <p class="kicker hx" style="--d:.15">The wedding of</p>
+      <h1 class="big"><span class="ln hx" style="--d:.25;--hx:hx-rise" data-t="first"></span><span class="amp hx" style="--d:.55;--hx:hx-rise">&amp;</span><span class="ln hx" style="--d:.75;--hx:hx-rise" data-t="second"></span></h1>
+      <p class="geo-names" data-letters="host" style="--ch0:1.2s"></p>
+      <div class="arch hx" style="--d:.9;--hx:hx-fade" aria-hidden="true">
+        <svg viewBox="0 0 300 360" fill="none" stroke="#121212" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle class="moon" cx="80" cy="92" r="20" fill="#6E1F2B" stroke="none"/>
+          <path class="draw" pathLength="1" d="M0 214C40 194 70 164 110 154C140 146 170 152 200 172C230 190 262 198 300 202"/>
+          <path class="draw" pathLength="1" d="M96 156V130h8v6h6v-6h8v6h6v-6h8v20M144 150V112h16v44M144 112l4-6 4 6 4-6 4 6"/>
+          <path class="draw" pathLength="1" d="M212 176v-26M207 158h10M212 150a3 3 0 1 0 0-6a3 3 0 1 0 0 6"/>
+          <path class="draw" pathLength="1" d="M228 248v-34h44v34M236 214v-14h28v14M242 200l8-18 8 18M250 182v-9M246 176h8"/>
+          <path class="draw" pathLength="1" d="M58 266C86 244 118 244 148 256C170 264 190 262 214 250M54 274L218 264"/>
+          <path class="draw" pathLength="1" d="M0 290C60 270 120 300 180 280S270 268 300 284M0 304C70 286 130 314 190 296S270 286 300 300"/>
+          <path class="draw" pathLength="1" d="M12 360V306h44v54M12 330h44M18 330v-12M27 330v-12M36 330v-12M45 330v-12M50 330v-12M62 360V318h34v42M68 338h22"/>
+          <path class="draw" pathLength="1" d="M180 86q6-6 12 0q6-6 12 0M214 106q4-4 8 0q4-4 8 0"/>
+        </svg>
+      </div>
+      <div class="facts hx" style="--d:1.4">
+        <div><small data-i18n="whenL"></small><b data-t="weekday"></b><span data-t="dateLong"></span></div>
+        <div><small data-i18n="whereL"></small><b data-t="venue"></b><span data-t="city"></span></div>
+        <div><small data-i18n="timeL"></small><b data-t="time"></b><span data-i18n="timeNote"></span></div>
+      </div>
+      <p class="lead hx" style="--d:1.6" data-t="lead"></p>
+      <div class="ctas hx" style="--d:1.8" data-ctas></div>
+    </div>
+    <div class="marquee" aria-hidden="true"><div class="mq-track">
+      <span>Save the date</span><i>✦</i><span data-t="dots"></span><i>✦</i><span data-t="host"></span><i>✦</i><span data-t="city"></span><i>✦</i>
+      <span>Save the date</span><i>✦</i><span data-t="dots"></span><i>✦</i><span data-t="host"></span><i>✦</i><span data-t="city"></span><i>✦</i>
+    </div></div>
+  </header>
+
+  <!-- ============ 01 STORY ============ -->
+  <section class="band" data-section="story">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="num">01</span><div><h2 data-i18n="storyTitle"></h2><span class="en">Our story</span></div></div>
+      <p class="sub" data-anim="up" data-t="storyIntro"></p>
+      <div class="story" id="story"></div>
+    </div>
+  </section>
+
+  <!-- ============ 02 COUNTDOWN ============ -->
+  <section class="band ink">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="num">02</span><div><h2 data-i18n="cdTitle"></h2><span class="en">Until we say yes</span></div></div>
+      <div class="count" id="count" data-anim="up"></div>
+    </div>
+  </section>
+
+  <!-- ============ 03 SCHEDULE ============ -->
+  <section class="band" data-section="events">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="num">03</span><div><h2 data-i18n="dayTitle"></h2><span class="en">The evening</span></div></div>
+      <ol class="program" id="day"></ol>
+    </div>
+  </section>
+
+  <!-- ============ 04 DETAILS ============ -->
+  <section class="band" data-section="details">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="num">04</span><div><h2 data-i18n="detailsTitle"></h2><span class="en">Details</span></div></div>
+      <div class="details" id="details"></div>
+      <div class="swatches" data-anim="up" aria-hidden="true"><i style="--c:#121212"></i><i style="--c:#F6F1E6"></i><i style="--c:#6E1F2B"></i><i style="--c:#B9A88C"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ 05 VENUE ============ -->
+  <section class="band" id="where">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="num">05</span><div><h2 data-i18n="locTitle"></h2><span class="en">The venue</span></div></div>
+      <div class="place" data-anim="up">
+        <svg class="map" viewBox="0 0 400 220" fill="none" stroke="#121212" stroke-linecap="round" aria-hidden="true">
+          <path class="draw" pathLength="1" d="M-10 150C60 120 120 170 190 140S320 90 410 120" stroke="#6E1F2B" stroke-width="10" stroke-opacity=".16"/>
+          <path class="draw" pathLength="1" d="M-10 150C60 120 120 170 190 140S320 90 410 120" stroke="#6E1F2B" stroke-width="1.2"/>
+          <g stroke-width="1" stroke-opacity=".55"><path class="draw" pathLength="1" d="M0 40H400M0 90H170M240 70H400M0 200H400M60 0V220M140 0V130M250 0V220M330 0V100M330 150V220M190 170L120 220M20 120L100 60"/></g>
+          <path class="draw" pathLength="1" d="M270 160h40v26h-40zM286 30h30v20h-30z" stroke-width="1"/>
+          <circle cx="250" cy="70" r="26" stroke="#6E1F2B" stroke-width="1" class="ping"/>
+          <path d="M250 70c0-12 0-12 0 0" stroke="none"/>
+          <path d="M250 82s-14-12-14-22a14 14 0 0 1 28 0c0 10-14 22-14 22z" fill="#6E1F2B" stroke="none" class="pin"/>
+          <circle cx="250" cy="60" r="5" fill="#F3EFE7" stroke="none" class="pin"/>
+        </svg>
+        <div class="pl-text">
+          <h3 class="pl-name" data-t="venue"></h3>
+          <p class="pl-addr" data-t="address"></p>
+          <a class="btn solid" id="map-btn" href="#" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span data-i18n="mapBtn"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 RSVP ============ -->
+  <section class="band" id="rsvp">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="num">06</span><div><h2 data-i18n="rsvpTitle"></h2><span class="en">Kindly reply</span></div></div>
+      <div class="rsvp card" id="rsvp-box" data-anim="up"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" data-anim="up">
+    <p class="see">See you <i>there</i></p>
+    <p class="f-names" data-t="host"></p>
+    <p class="when" data-t="dots"></p>
+    <p class="brand" data-i18n="brand"></p>
+  </div>
+</footer>
+
+<template id="tpl-story"><article class="chapter" data-anim="up"><div class="cp-photo" data-f="photo"></div><div class="cp-body"><span class="cp-year" data-f="year"></span><span class="cp-season" data-f="season"></span><h3 data-f="title"></h3><p data-f="text"></p></div></article></template>
+<template id="tpl-event"><li class="ev" data-anim="up"><span class="ev-time" data-f="time"></span><div class="ev-body"><h3 data-f="title"></h3><p data-f="place"></p></div><span class="ev-ic"><svg data-f="icon"><use href="#i-star"/></svg></span></li></template>
+<template id="tpl-detail"><div class="detail" data-anim="up"><span class="d-ic"><svg data-f="icon"><use href="#i-star"/></svg></span><h3 data-f="label"></h3><p data-f="value"></p></div></template>
+
+<script src="js/config.js"></script>
+<script src="../../assets/core/js/i18n.js"></script>
+<script src="../../assets/core/js/icons.js"></script>
+<script src="../../assets/core/js/fx.js"></script>
+<script src="../../assets/core/js/music.js"></script>
+<script src="../../assets/core/js/core.js"></script>
+<script>/* the stacked names shrink to fit the longer name */(function(){ var C = window.CONFIG, b = document.querySelector(".big"); if (b) b.style.setProperty("--len", Math.max(String(C.first || "").length, String(C.second || "").length, 4)); })();</script>
+<script>
+/* რუკის ღილაკი: mapUrl ან მისამართი Google Maps-ში */
+(function(){ var C = window.CONFIG, b = document.getElementById("map-btn"); if (!b) return;
+  function L(v){ return v && typeof v === "object" ? (document.documentElement.lang === "en" ? v.en : v.ka) : (v || ""); }
+  function upd(){ b.href = C.mapUrl || "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(L(C.address)); }
+  upd(); b.addEventListener("click", upd); })();
+</script>
+</body>
+</html>

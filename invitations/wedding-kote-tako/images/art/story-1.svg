@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCE3B8"/><stop offset="1" stop-color="#FDF4E3"/></linearGradient>
+<radialGradient id="lg" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#FFF3A6"/><stop offset=".45" stop-color="#F7D24E"/><stop offset="1" stop-color="#D9A51E"/></radialGradient></defs>
+<rect width="300" height="360" fill="url(#sky)"/>
+<circle cx="214" cy="126" r="38" fill="#FFD27A"/><circle cx="214" cy="126" r="54" fill="#FFD27A" opacity=".25"/>
+<path d="M0 160h300v200H0z" fill="#4E7FC4"/><path d="M0 160h300v12H0z" fill="#6E95D1"/>
+<g stroke="#BFD6F2" stroke-width="2" fill="none" stroke-linecap="round"><path d="M180 176h70M196 186h40M30 196h60M210 204h50"/></g>
+<path d="M0 262c60-22 160-22 300 0v98H0z" fill="#F3E2C2"/>
+<path d="M150 70v200" stroke="#7A5A3A" stroke-width="4"/>
+<path d="M60 112C90 66 210 66 240 112z" fill="#1F4E9C"/><g fill="#FFFFFF"><path d="M90 112L120 70l-6 42zM150 112V66l14 46zM210 112L180 70l6 42z"/></g>
+<path d="M60 112C90 66 210 66 240 112" fill="none" stroke="#163D7E" stroke-width="2"/>
+<g fill="#FFFFFF" stroke="#1F4E9C" stroke-width="2"><path d="M70 236h160l-10 14H80z"/></g><path d="M150 250v40" stroke="#1F4E9C" stroke-width="4"/>
+<g><path d="M104 236l-6-56h36l-6 56z" fill="#FFF4C2" stroke="#1F4E9C" stroke-width="2"/><path d="M100 200h32" stroke="#F2C84B" stroke-width="10" opacity=".7"/><path d="M122 180l12-34" stroke="#E86F5A" stroke-width="3" stroke-linecap="round"/>
+<path d="M172 236l-6-56h36l-6 56z" fill="#FFF4C2" stroke="#1F4E9C" stroke-width="2"/><path d="M168 200h32" stroke="#F2C84B" stroke-width="10" opacity=".7"/><path d="M178 180l-10-34" stroke="#E86F5A" stroke-width="3" stroke-linecap="round"/></g>
+<g fill="url(#lg)"><g transform="translate(96 186) rotate(-20) scale(.42)"><path d="M-25 0C-26-2-24-3-22-4C-20-14-10-18 0-18S20-14 22-4C24-3 26-2 25 0C26 2 24 3 22 4C20 14 10 18 0 18S-20 14-22 4C-24 3-26 2-25 0Z"/></g><g transform="translate(204 186) rotate(20) scale(.42)"><path d="M-25 0C-26-2-24-3-22-4C-20-14-10-18 0-18S20-14 22-4C24-3 26-2 25 0C26 2 24 3 22 4C20 14 10 18 0 18S-20 14-22 4C-24 3-26 2-25 0Z"/></g></g>
+<path d="M150 214c-4-6-12-4-12 2 0 6 12 12 12 12s12-6 12-12c0-6-8-8-12-2z" fill="#E86F5A"/>
+</svg>

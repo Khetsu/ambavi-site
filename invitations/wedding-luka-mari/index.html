@@ -1,0 +1,186 @@
+<!doctype html>
+<!-- ამბავი · მოსაწვევი „wedding-luka-mari“
+     ტექსტები და მონაცემები: js/config.js · დიზაინის სტილი: css/theme.css · ილუსტრაციები: images/art/
+     საერთო ძრავა (ენა, მუსიკა, ეფექტები, უკუთვლა, RSVP): js/core.js ... ან საიტზე assets/core/ -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ლუკა & მარი · საქორწილო მოსაწვევი</title>
+<meta name="description" content="ლუკა და მარის საქორწილო მოსაწვევი · 28 ოქტომბერი 2026">
+<meta name="theme-color" content="#FFFDF8">
+<meta property="og:title" content="ლუკა & მარი · 28.10.2026">
+<meta property="og:description" content="საქორწილო მოსაწვევი">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Pinyon+Script&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Georgian:wght@200;300;400;500&family=Noto+Sans+Georgian:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../../assets/core/css/base.css">
+<link rel="stylesheet" href="css/theme.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="doorGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F6EEDF"/><stop offset=".7" stop-color="#FFFDF8"/><stop offset="1" stop-color="#F9F3E7"/></linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF3CF"/><stop offset=".45" stop-color="#D4AF6A"/><stop offset="1" stop-color="#8E6A2C"/></linearGradient>
+    <radialGradient id="ringGlow"><stop offset="0" stop-color="#F3DC94" stop-opacity=".45"/><stop offset="1" stop-color="#F3DC94" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3DC94"/><stop offset="1" stop-color="#B8893F"/></linearGradient>
+  </defs>
+  <!-- art-deco door panel -->
+  <symbol id="door-art" viewBox="0 0 200 600">
+    <rect width="200" height="600" fill="url(#doorGrad)"/>
+    <g fill="none" stroke="#C49A4A" stroke-width="1.2">
+      <rect x="12" y="12" width="176" height="576" stroke-opacity=".75"/>
+      <rect x="22" y="22" width="156" height="556" stroke-opacity=".35"/>
+      <path d="M200 300H60M200 300L71 247M200 300L101 201M200 300L147 171M200 300V160M200 300L71 353M200 300L101 399M200 300L147 429M200 300V440" stroke-opacity=".45"/>
+      <path d="M200 160A140 140 0 0 0 200 440" stroke-opacity=".85" stroke-width="1.6"/>
+      <path d="M200 200A100 100 0 0 0 200 400" stroke-opacity=".6"/>
+      <path d="M200 240A60 60 0 0 0 200 360" stroke-opacity=".5"/>
+      <path d="M40 60L100 90L160 60M40 80L100 110L160 80M40 100L100 130L160 100" stroke-opacity=".5"/>
+      <path d="M40 540L100 510L160 540M40 520L100 490L160 520M40 500L100 470L160 500" stroke-opacity=".5"/>
+      <path d="M40 160V250M40 350V440M32 150V450" stroke-opacity=".3"/>
+    </g>
+    <g fill="#D4AF6A"><circle cx="100" cy="90" r="3"/><circle cx="100" cy="510" r="3"/><path d="M100 138l6 10-6 10-6-10z" opacity=".75"/><path d="M100 442l6 10-6 10-6-10z" opacity=".75"/></g>
+    <rect x="183" y="268" width="6" height="64" rx="3" fill="url(#goldGrad)"/>
+  </symbol>
+  <!-- art-deco divider -->
+  <symbol id="rule" viewBox="0 0 260 30">
+    <g fill="none" stroke="currentColor" stroke-width="1.1">
+      <path d="M0 15H96M164 15H260M10 20H90M170 20H250" stroke-opacity=".6"/>
+      <path d="M130 3L142 15L130 27L118 15Z"/>
+      <path d="M130 9L136 15L130 21L124 15Z" fill="currentColor" fill-opacity=".5"/>
+      <path d="M100 15a14 14 0 0 1 14-10M160 15a14 14 0 0 0-14-10M100 15a14 14 0 0 0 14 10M160 15a14 14 0 0 1-14 10"/>
+    </g>
+  </symbol>
+  <!-- deco fan for corners and footer -->
+  <symbol id="fan" viewBox="0 0 120 64">
+    <g fill="none" stroke="currentColor" stroke-width="1.1">
+      <path d="M4 62a56 56 0 0 1 112 0M16 62a44 44 0 0 1 88 0M28 62a32 32 0 0 1 64 0M40 62a20 20 0 0 1 40 0"/>
+      <path d="M60 62V6M60 62L22 20M60 62L98 20M60 62L8 42M60 62L112 42" stroke-opacity=".55"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ============ GATE: art-deco doors with a golden medallion ============ -->
+<div class="gate" id="gate" role="button" tabindex="0" aria-label="მოსაწვევის გახსნა"
+     data-stages="s1:0,s2:650,s3:1150,s4:2500" data-open="3300" data-burst="650:sparkle:#medal:60" hidden>
+  <div class="g-light" aria-hidden="true"><i></i></div>
+  <div class="doors" aria-hidden="true">
+    <div class="door l"><svg class="door-art" viewBox="0 0 200 600" preserveAspectRatio="xMaxYMid slice"><use href="#door-art"/></svg></div>
+    <div class="door r"><svg class="door-art" viewBox="0 0 200 600" preserveAspectRatio="xMaxYMid slice"><use href="#door-art"/></svg></div>
+  </div>
+  <div class="g-text">
+    <span class="g-script foil">You are invited</span>
+    <span class="g-names" data-t="host"></span>
+    <span class="g-date" data-t="dots"></span>
+  </div>
+  <div class="medal" id="medal" aria-hidden="true"><span class="m-rays"></span><span class="m-disc"><b data-t="monogram"></b></span></div>
+  <p class="g-hint"><svg><use href="#i-note"/></svg><span data-i18n="tapHint"></span></p>
+</div>
+<script>try{document.getElementById("gate").hidden=false;document.documentElement.classList.add("gated")}catch(e){}</script>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="hero-glow" data-parallax=".12" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <p class="kicker hx" style="--d:.1">The Wedding of</p>
+      <div class="arch hx" style="--d:.35;--hx:hx-zoom">
+        <span class="arch-rays" aria-hidden="true"></span>
+        <div class="arch-photo arch-rings">
+          <svg viewBox="0 0 200 260" aria-hidden="true">
+            <g class="rg-glow"><circle cx="100" cy="140" r="70" fill="url(#ringGlow)"/></g>
+            <circle class="rg r1" cx="80" cy="146" r="40" fill="none" stroke="url(#goldGrad)" stroke-width="7"/>
+            <circle class="rg r2" cx="120" cy="146" r="40" fill="none" stroke="url(#goldGrad)" stroke-width="7"/>
+            <path class="rg-gem" d="M120 94l-10-10 4-8h12l4 8z" fill="#FFFFFF" stroke="#C49A4A" stroke-width="1.2"/>
+            <g class="tw" fill="#D4AF6A"><path d="M44 70l2.5 7 7 2.5-7 2.5-2.5 7-2.5-7-7-2.5 7-2.5z"/><path d="M160 60l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z"/><path d="M150 210l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M52 206l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z"/><path d="M118 74l1.4 3.6 3.6 1.4-3.6 1.4-1.4 3.6-1.4-3.6-3.6-1.4 3.6-1.4z"/></g>
+            <text class="rg-mono" x="100" y="40" text-anchor="middle" data-t="monogram"></text>
+          </svg>
+        </div>
+      </div>
+      <h1 class="script-names foil hx" style="--d:.8" data-t="script"></h1>
+      <p class="geo-names" data-letters="host" style="--ch0:1.2s"></p>
+      <svg class="rule hx" style="--d:1.5" aria-hidden="true"><use href="#rule"/></svg>
+      <div class="date-deco hx" style="--d:1.65">
+        <span class="dd-side" data-t="weekday"></span>
+        <b class="dd-day foil" data-t="dayNum"></b>
+        <span class="dd-side"><span data-t="month"></span><br><span data-t="year"></span></span>
+      </div>
+      <p class="where hx" style="--d:1.85"><svg><use href="#i-pin"/></svg><span data-t="city"></span></p>
+      <p class="lead hx" style="--d:2" data-t="lead"></p>
+      <div class="ctas hx" style="--d:2.2" data-ctas></div>
+    </div>
+  </header>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="band tint">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script foil">Save the date</span><h2 data-i18n="cdTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <div class="count" id="count" data-anim="up"></div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="band" data-section="events">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script foil">The celebration</span><h2 data-i18n="dayTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <ol class="timeline" id="day"></ol>
+    </div>
+  </section>
+
+  <!-- ============ RESTAURANT ============ -->
+  <section class="band tint" id="where">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script foil">The venue</span><h2 data-i18n="locTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <div class="venue card" data-anim="up"><svg class="corner tl"><use href="#fan"/></svg><svg class="corner br"><use href="#fan"/></svg>
+        <div class="v-pin" aria-hidden="true"><span class="v-pulse"></span><span class="v-pulse d2"></span>
+          <svg viewBox="0 0 48 64"><path d="M24 2C12 2 3 11 3 23c0 15 21 37 21 37s21-22 21-37C45 11 36 2 24 2z" fill="url(#goldGrad)"/><circle cx="24" cy="23" r="8.5" fill="#fff"/><path d="M24 18.5c-2-3-6.5-1.6-6.5 1.6 0 3.4 6.5 7.4 6.5 7.4s6.5-4 6.5-7.4c0-3.2-4.5-4.6-6.5-1.6z" fill="#C49A4A"/></svg></div>
+        <h3 class="v-name" data-t="venue"></h3>
+        <p class="v-addr" data-t="address"></p>
+        <p class="v-time"><span data-i18n="seatLabel"></span><b class="foil" data-t="seatTime"></b></p>
+        <a class="btn solid v-map" id="map-btn" href="#" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span data-i18n="mapBtn"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->  <!-- ============ RSVP ============ -->
+  <section class="band" id="rsvp">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script foil">Will you join us?</span><h2 data-i18n="rsvpTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <div class="rsvp card" id="rsvp-box" data-anim="up"><svg class="corner tl"><use href="#fan"/></svg><svg class="corner br"><use href="#fan"/></svg></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" data-anim="up">
+    <svg class="foot-fan"><use href="#fan"/></svg>
+    <p class="toast" data-t="toast"></p>
+    <p class="sign foil" data-t="script"></p>
+    <p class="when" data-t="dots"></p>
+    <p class="brand" data-i18n="brand"></p>
+  </div>
+</footer>
+
+<!-- templates the engine fills from config.js -->
+<template id="tpl-story"><article class="chapter" data-anim="up"><div class="cp-photo kb" data-f="photo"></div><div class="cp-body"><span class="cp-year foil" data-f="year"></span><span class="cp-season" data-f="season"></span><h3 data-f="title"></h3><p data-f="text"></p></div></article></template>
+<template id="tpl-event"><li class="ev" data-anim="up"><span class="ev-time" data-f="time"></span><span class="ev-dot"><svg data-f="icon"><use href="#i-star"/></svg></span><div class="ev-body"><h3 data-f="title"></h3><p data-f="place"></p><a class="ev-map" data-f="map"><svg><use href="#i-pin"/></svg><span data-f="maptext"></span></a></div><div class="ev-pic" data-f="photo"></div></li></template>
+<template id="tpl-detail"><div class="detail" data-anim="zoom"><span class="d-ic"><svg data-f="icon"><use href="#i-star"/></svg></span><h3 data-f="label"></h3><p data-f="value"></p></div></template>
+<template id="tpl-photo"><li class="gal" data-anim="blur"><div class="gal-in kb" data-f="photo"></div></li></template>
+
+<script src="js/config.js"></script>
+<script src="../../assets/core/js/i18n.js"></script>
+<script src="../../assets/core/js/icons.js"></script>
+<script src="../../assets/core/js/fx.js"></script>
+<script src="../../assets/core/js/music.js"></script>
+<script src="../../assets/core/js/core.js"></script>
+<script>
+/* რუკის ღილაკი: mapUrl ან მისამართის ძებნა Google Maps-ში */
+(function(){ var C = window.CONFIG, b = document.getElementById("map-btn"); if (!b) return;
+  function upd(){ var ka = document.documentElement.lang !== "en", a = C.address ? (ka ? C.address.ka : C.address.en) : "", v = C.venue ? (ka ? C.venue.ka : C.venue.en) : "";
+    b.href = C.mapUrl || "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(v + ", " + a); }
+  upd(); b.addEventListener("click", upd); })();
+</script>
+</body>
+</html>

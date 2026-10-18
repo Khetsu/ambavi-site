@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#071A2B"/><stop offset=".7" stop-color="#173A52"/><stop offset="1" stop-color="#2D4F5E"/></linearGradient>
+</defs>
+<rect width="400" height="340" fill="url(#sky)"/>
+<g fill="none" stroke-linecap="round" stroke-width="2">
+<g stroke="#F3DC94" transform="translate(110 80)"><path d="M0 0L0-30M0 0L21-21M0 0L30 0M0 0L21 21M0 0L0 30M0 0L-21 21M0 0L-30 0M0 0L-21-21"/></g>
+<g stroke="#F49AB0" transform="translate(300 60) scale(.8)"><path d="M0 0L0-30M0 0L21-21M0 0L30 0M0 0L21 21M0 0L0 30M0 0L-21 21M0 0L-30 0M0 0L-21-21"/></g>
+<g stroke="#9FE0C7" transform="translate(210 40) scale(.6)"><path d="M0 0L0-30M0 0L21-21M0 0L30 0M0 0L21 21M0 0L0 30M0 0L-21 21M0 0L-30 0M0 0L-21-21"/></g>
+</g>
+<g fill="#FFF3CF"><circle cx="110" cy="50" r="2"/><circle cx="140" cy="80" r="2"/><circle cx="300" cy="36" r="2"/><circle cx="324" cy="60" r="2"/><circle cx="60" cy="130" r="1.2"/><circle cx="360" cy="150" r="1.2"/></g>
+<path d="M0 230C60 200 120 170 200 150C260 136 320 160 400 180V340H0Z" fill="#14281F"/>
+<g fill="#22382D" stroke="#3E5A47" stroke-width="1.2"><path d="M70 214V180H84V172H96V180H110V196L150 170V150H160V142H172V150H182V166L230 150V132H242V124H254V132H266V156L300 170V190"/></g>
+<g fill="#F7C873"><rect x="236" y="138" width="4" height="6"/><rect x="156" y="154" width="4" height="6"/><rect x="88" y="184" width="4" height="6"/></g>
+<path d="M0 300C100 280 300 280 400 300V340H0Z" fill="#0A1712"/>
+<g fill="#FFD98A" opacity=".85"><circle cx="40" cy="296" r="2"/><circle cx="70" cy="290" r="2"/><circle cx="330" cy="292" r="2"/><circle cx="360" cy="296" r="2"/><circle cx="300" cy="300" r="1.6"/></g>
+<g fill="#0B1E17"><circle cx="190" cy="236" r="8"/><path d="M182 246h16l4 46h-24z"/><circle cx="214" cy="240" r="7"/><path d="M204 250h20l10 42h-40z"/><path d="M196 258l12-4" stroke="#0B1E17" stroke-width="5"/></g>
+<g transform="translate(206 226)"><circle r="7" fill="none" stroke="#F3DC94" stroke-width="2"/><path d="M-4-9l4-5 4 5-4 4z" fill="#FFFFFF"/></g>
+<g fill="#FFF3CF"><path d="M222 212l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path d="M190 214l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z"/></g>
+</svg>

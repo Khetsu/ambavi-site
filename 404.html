@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- ამბავი · 404 — „გვერდი ვერ მოიძებნა“.
+     ჰოსტინგი ამ გვერდს ნებისმიერ არარსებულ მისამართზე აჩვენებს, ამიტომ ის სრულიად დამოუკიდებელია:
+     სტილი აქვეა, ბმულები კი სკრიპტით ითვლება (Netlify-ზეც და GitHub Pages-ზეც მუშაობს). -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>გვერდი ვერ მოიძებნა · ამბავი</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Noto+Serif+Georgian:wght@400;500&family=Noto+Sans+Georgian:wght@500;600&display=swap">
+<style>
+  /* იგივე ფერები, რაც საიტზე (assets/site/css/site.css) */
+  :root{--bg:#FAF7F2;--ink:#1F1B16;--muted:#6B6258;--gold:#B8893F}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;padding:40px 20px;background:radial-gradient(circle at 50% 20%,rgba(231,207,154,.45),transparent 60%),var(--bg);color:var(--ink);font:400 16px/1.7 "Noto Sans Georgian",system-ui,sans-serif;text-align:center}
+  .logo{font:400 34px/1 "Pinyon Script",cursive;color:var(--gold)}
+  b{display:block;margin:10px 0 0;font:500 clamp(90px,22vw,170px)/1 "Noto Serif Georgian",serif;background:linear-gradient(105deg,#9C7A3C,#E7CF9A 40%,#B8893F);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{margin:6px 0 10px;font:500 26px/1.3 "Noto Serif Georgian",serif}
+  p{margin:0 auto 26px;max-width:420px;color:var(--muted)}
+  a.btn{display:inline-block;margin:4px;padding:14px 24px;border-radius:99px;text-decoration:none;font:600 14px/1 "Noto Sans Georgian",sans-serif}
+  .dark{background:var(--ink);color:#fff}.line{border:1px solid rgba(31,27,22,.12);background:#fff;color:var(--ink)}
+</style>
+</head>
+<body>
+  <main>
+    <div class="logo">Ambavi</div>
+    <b>404</b>
+    <h1>ეს გვერდი ვერ მოიძებნა</h1>
+    <p>შესაძლოა ბმული შეიცვალა. დაბრუნდით მთავარ გვერდზე ან ნახეთ ჩვენი დიზაინები.</p>
+    <a class="btn dark" data-to="index.html" href="/">მთავარი</a>
+    <a class="btn line" data-to="designs.html" href="/designs.html">დიზაინები</a>
+  </main>
+<script>
+  /* საიტის საწყისი მისამართი: GitHub Pages-ზე ეს არის /<პროექტი>/, სხვაგან უბრალოდ / */
+  (function(){
+    var base = /github\.io$/.test(location.hostname) ? "/" + (location.pathname.split("/")[1] || "") + "/" : "/";
+    document.querySelectorAll("[data-to]").forEach(function(a){ a.href = base + a.getAttribute("data-to"); });
+  })();
+</script>
+</body>
+</html>

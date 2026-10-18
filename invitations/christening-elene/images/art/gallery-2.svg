@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBF4E6"/><stop offset="1" stop-color="#EEF5FC"/></linearGradient></defs>
+<rect width="300" height="400" fill="url(#bg)"/>
+<ellipse cx="150" cy="300" rx="110" ry="14" fill="#E6DCC6"/>
+<g><path d="M70 290c-6-30 4-60 30-64 20-4 30 10 34 26 6 22 20 30 20 40z" fill="#FFFFFF" stroke="#D6E2EF" stroke-width="2"/><path d="M96 228c4 10 20 12 30 6" fill="none" stroke="#9CC3E6" stroke-width="5" stroke-linecap="round"/><circle cx="112" cy="242" r="5" fill="#C9A15B"/></g>
+<g><path d="M150 296c-6-30 4-60 30-64 20-4 30 10 34 26 6 22 20 30 20 40z" fill="#FFFFFF" stroke="#D6E2EF" stroke-width="2"/><path d="M176 234c4 10 20 12 30 6" fill="none" stroke="#9CC3E6" stroke-width="5" stroke-linecap="round"/><circle cx="192" cy="248" r="5" fill="#C9A15B"/></g>
+<g fill="#F3DC94"><path d="M150 90l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M80 140l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M230 130l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g>
+</svg>

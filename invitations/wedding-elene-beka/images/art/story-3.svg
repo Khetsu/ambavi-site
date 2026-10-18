@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7E3DD"/><stop offset="1" stop-color="#FBF1E2"/></linearGradient>
+<radialGradient id="gl"><stop offset="0" stop-color="#FFF4CC" stop-opacity=".95"/><stop offset="1" stop-color="#FFF4CC" stop-opacity="0"/></radialGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8E7B1"/><stop offset=".5" stop-color="#C9A24F"/><stop offset="1" stop-color="#F3DB97"/></linearGradient>
+</defs>
+<rect width="400" height="500" fill="url(#bg)"/>
+<g opacity=".55"><rect x="0" y="60" width="400" height="10" fill="#D7B99B"/><rect x="0" y="160" width="400" height="10" fill="#D7B99B"/>
+<g><rect x="20" y="20" width="14" height="40" fill="#C98A8A"/><rect x="36" y="26" width="12" height="34" fill="#9DB08C"/><rect x="50" y="18" width="14" height="42" fill="#D8B66C"/><rect x="66" y="24" width="12" height="36" fill="#A99BC4"/><rect x="330" y="22" width="14" height="38" fill="#9DB08C"/><rect x="346" y="16" width="12" height="44" fill="#C98A8A"/><rect x="360" y="26" width="14" height="34" fill="#D8B66C"/>
+<rect x="24" y="120" width="14" height="40" fill="#D8B66C"/><rect x="40" y="126" width="12" height="34" fill="#C98A8A"/><rect x="340" y="118" width="14" height="42" fill="#A99BC4"/><rect x="356" y="126" width="12" height="34" fill="#9DB08C"/></g></g>
+<circle cx="200" cy="300" r="190" fill="url(#gl)"/>
+<path d="M200 380c-30-18-120-34-150-24v-150c30-10 120 6 150 24z" fill="#FBF5E8" stroke="#C9A867" stroke-width="2"/>
+<path d="M200 380c30-18 120-34 150-24v-150c-30-10-120 6-150 24z" fill="#F6EDDC" stroke="#C9A867" stroke-width="2"/>
+<g stroke="#D9C9A9" stroke-width="1.6" stroke-linecap="round"><path d="M70 230c30-4 80 8 112 24M70 252c30-4 80 8 112 24M70 274c30-4 80 8 112 24M70 296c30-4 80 8 112 24M70 318c30-4 80 8 112 24"/><path d="M330 230c-30-4-80 8-112 24M330 252c-30-4-80 8-112 24M330 274c-30-4-80 8-112 24M330 296c-30-4-80 8-112 24"/></g>
+<path d="M200 380v-175" stroke="#C9A867" stroke-width="1.5"/>
+<path d="M120 400c40 16 120 16 160 0v14c-40 16-120 16-160 0z" fill="#E4D2B0" opacity=".7"/>
+<g transform="translate(200 270)"><circle r="22" fill="none" stroke="url(#gold)" stroke-width="7"/><circle r="22" fill="none" stroke="#FFF7D8" stroke-width="1.4" opacity=".8" transform="rotate(-30)" stroke-dasharray="20 120"/>
+<path d="M-12 -34l12-14 12 14-12 12z" fill="#FFFFFF" stroke="#C6D3E6" stroke-width="1.4"/><path d="M-12 -34h24M0 -48v14" stroke="#C6D3E6" stroke-width=".8"/></g>
+<g fill="#FFFFFF" stroke="#E3C97B" stroke-width="1"><path d="M200 196l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M150 230l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path d="M252 222l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path d="M280 160l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M120 170l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g>
+</svg>

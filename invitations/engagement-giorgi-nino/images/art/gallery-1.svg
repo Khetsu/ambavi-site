@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FDF0EC"/><stop offset="1" stop-color="#F6D9D2"/></linearGradient>
+<radialGradient id="r1"><stop offset="0" stop-color="#FDE3E8"/><stop offset="1" stop-color="#D96F86"/></radialGradient>
+<radialGradient id="r2"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3BCC8"/></radialGradient>
+<radialGradient id="r3"><stop offset="0" stop-color="#FCE1D3"/><stop offset="1" stop-color="#E9A387"/></radialGradient>
+</defs>
+<rect width="400" height="400" fill="url(#bg)"/>
+<g stroke="#7E9572" stroke-width="5" stroke-linecap="round" fill="none"><path d="M200 400V250M200 300L160 220M200 300L240 220M200 330L130 250M200 330L270 250"/></g>
+<g fill="#A3B79B"><ellipse cx="140" cy="250" rx="28" ry="10" transform="rotate(-40 140 250)"/><ellipse cx="262" cy="250" rx="28" ry="10" transform="rotate(40 262 250)"/><ellipse cx="170" cy="290" rx="24" ry="9" transform="rotate(-25 170 290)"/><ellipse cx="232" cy="290" rx="24" ry="9" transform="rotate(25 232 290)"/></g>
+<g><circle cx="200" cy="170" r="48" fill="url(#r1)"/><circle cx="140" cy="200" r="38" fill="url(#r2)"/><circle cx="260" cy="200" r="38" fill="url(#r3)"/><circle cx="170" cy="124" r="30" fill="url(#r2)"/><circle cx="232" cy="124" r="30" fill="url(#r1)"/><circle cx="200" cy="236" r="32" fill="url(#r2)"/></g>
+<g fill="none" stroke-width="2" stroke-opacity=".55"><path d="M200 170m-10 0a10 10 0 1 1 20 0a18 18 0 1 1-36 0a28 28 0 1 1 56 0" stroke="#B94A64"/><path d="M140 200m-7 0a7 7 0 1 1 14 0a13 13 0 1 1-26 0a20 20 0 1 1 40 0" stroke="#E3A3B0"/><path d="M260 200m-7 0a7 7 0 1 1 14 0a13 13 0 1 1-26 0a20 20 0 1 1 40 0" stroke="#C9806A"/><path d="M170 124m-5 0a5 5 0 1 1 10 0a10 10 0 1 1-20 0" stroke="#E3A3B0"/><path d="M232 124m-5 0a5 5 0 1 1 10 0a10 10 0 1 1-20 0" stroke="#B94A64"/></g>
+<path d="M200 320l-34 60 34-16 34 16z" fill="#FBE3D8" stroke="#D9A28E"/><path d="M188 318h24v16h-24z" fill="#E7A79A"/>
+</svg>

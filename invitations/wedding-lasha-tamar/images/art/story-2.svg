@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2B97A"/><stop offset=".55" stop-color="#F8D9A5"/><stop offset="1" stop-color="#FBEACB"/></linearGradient>
+<radialGradient id="sun"><stop offset="0" stop-color="#FFF6D8"/><stop offset="1" stop-color="#FFE4A8" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="400" height="340" fill="url(#sky)"/>
+<circle cx="300" cy="120" r="90" fill="url(#sun)"/><circle cx="300" cy="120" r="24" fill="#FFF3D0"/>
+<path d="M0 170L60 140L120 160L190 120L260 150L330 128L400 150V340H0Z" fill="#B9A3B8" opacity=".55"/>
+<path d="M0 200C80 170 150 186 220 170C290 156 350 170 400 160V340H0Z" fill="#B78F4E"/>
+<g fill="#E9D3A6" stroke="#9C7A4E" stroke-width="1"><path d="M60 160V136l8-6 8 6v24z"/><path d="M86 170v-30l6-6 6 6v30z"/><rect x="100" y="150" width="34" height="20"/><path d="M98 150l19-12 19 12z" fill="#B65E3C"/><rect x="140" y="156" width="26" height="16"/><path d="M138 156l15-10 15 10z" fill="#B65E3C"/></g>
+<path d="M52 172H176" stroke="#9C7A4E" stroke-width="3"/>
+<path d="M0 230C100 210 300 210 400 230V340H0Z" fill="#8E9D52"/>
+<g stroke="#5F6A2E" stroke-width="2.5" fill="none"><path d="M-20 340L120 236M40 340L150 236M100 340L180 236M160 340L210 236M220 340L240 236M280 340L270 236M340 340L300 236M400 340L330 236M460 340L360 236"/></g>
+<g fill="#6E2C46"><circle cx="70" cy="300" r="5"/><circle cx="78" cy="306" r="5"/><circle cx="70" cy="310" r="5"/><circle cx="150" cy="268" r="4"/><circle cx="156" cy="273" r="4"/><circle cx="262" cy="280" r="4.5"/><circle cx="268" cy="286" r="4.5"/><circle cx="330" cy="300" r="5"/><circle cx="338" cy="306" r="5"/></g>
+<g><path d="M180 300h70l-8 34h-54z" fill="#A86E3C"/><path d="M180 300h70" stroke="#7A4A22" stroke-width="3"/><path d="M186 310h58M190 320h50" stroke="#7A4A22" stroke-width="1.4"/>
+<g fill="#5B2340"><circle cx="196" cy="296" r="7"/><circle cx="208" cy="292" r="7"/><circle cx="220" cy="296" r="7"/><circle cx="232" cy="292" r="7"/><circle cx="214" cy="286" r="7"/><circle cx="226" cy="286" r="6"/></g>
+<path d="M214 280c4-8 12-10 16-6" stroke="#5F6A2E" stroke-width="2" fill="none"/><path d="M228 276c8-4 14 0 12 6-6 0-10-2-12-6z" fill="#8E9D52"/></g>
+</svg>

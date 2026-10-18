@@ -1,0 +1,191 @@
+<!doctype html>
+<!-- ამბავი · მოსაწვევი „wedding-kote-tako“
+     ტექსტები და მონაცემები: js/config.js · დიზაინის სტილი: css/theme.css · ილუსტრაციები: images/art/
+     საერთო ძრავა (ენა, მუსიკა, ეფექტები, უკუთვლა, RSVP): js/core.js ... ან საიტზე assets/core/ -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>კოტე & თაკო · 10 ივლისი 2027</title>
+<meta name="description" content="კოტე და თაკოს საქორწილო მოსაწვევი · 10 ივლისი 2027, ციხისძირი">
+<meta name="theme-color" content="#FBF8F2">
+<meta property="og:title" content="კოტე & თაკო · 10.07.2027">
+<meta property="og:description" content="საქორწილო მოსაწვევი">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Parisienne&family=Noto+Serif+Georgian:wght@300;400;500&family=Noto+Sans+Georgian:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../../assets/core/css/base.css">
+<link rel="stylesheet" href="css/theme.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="lemonG" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#FFF3A6"/><stop offset=".45" stop-color="#F7D24E"/><stop offset="1" stop-color="#D9A51E"/></radialGradient>
+    <linearGradient id="leafG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8DAF52"/><stop offset="1" stop-color="#4F7230"/></linearGradient>
+    <path id="leaf" d="M0 0C9-11 27-11 36 0C27 11 9 11 0 0Z"/>
+    <path id="lemon" d="M-25 0C-26-2-24-3-22-4C-20-14-10-18 0-18S20-14 22-4C24-3 26-2 25 0C26 2 24 3 22 4C20 14 10 18 0 18S-20 14-22 4C-24 3-26 2-25 0Z"/>
+  </defs>
+  <!-- a lemon branch: two lemons, leaves -->
+  <symbol id="branch" viewBox="0 0 240 170">
+    <path d="M4 14C50 22 96 34 150 64S220 120 236 150" fill="none" stroke="#6B5A3A" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M118 48C124 70 120 86 112 100" fill="none" stroke="#6B5A3A" stroke-width="2.2" stroke-linecap="round"/>
+    <g fill="url(#leafG)" stroke="#3F5F24" stroke-width=".6">
+      <use href="#leaf" transform="translate(30 18) rotate(-28)"/><use href="#leaf" transform="translate(52 22) rotate(30)"/>
+      <use href="#leaf" transform="translate(80 30) rotate(-40) scale(1.1)"/><use href="#leaf" transform="translate(96 38) rotate(48)"/>
+      <use href="#leaf" transform="translate(150 64) rotate(-22) scale(1.15)"/><use href="#leaf" transform="translate(168 78) rotate(62)"/>
+      <use href="#leaf" transform="translate(196 104) rotate(-10)"/><use href="#leaf" transform="translate(210 118) rotate(80) scale(.9)"/>
+      <use href="#leaf" transform="translate(118 52) rotate(130) scale(.8)"/>
+    </g>
+    <g class="lem l1"><use href="#lemon" fill="url(#lemonG)" transform="translate(112 118) rotate(-70)"/><ellipse cx="104" cy="112" rx="3" ry="7" fill="#fff" opacity=".55" transform="rotate(-20 104 112)"/></g>
+    <g class="lem l2"><use href="#lemon" fill="url(#lemonG)" transform="translate(206 150) rotate(-60) scale(.9)"/><ellipse cx="199" cy="144" rx="2.6" ry="6" fill="#fff" opacity=".55" transform="rotate(-20 199 144)"/></g>
+    <g fill="#fff"><circle cx="64" cy="46" r="3.5"/><circle cx="70" cy="50" r="3"/><circle cx="60" cy="52" r="2.6"/><circle cx="66" cy="49" r="1.4" fill="#F7D24E"/></g>
+  </symbol>
+  <!-- deco rule with a tiny lemon -->
+  <symbol id="rule" viewBox="0 0 240 24">
+    <path d="M0 12H96M144 12H240" stroke="currentColor" stroke-width="1"/>
+    <use href="#lemon" fill="url(#lemonG)" transform="translate(120 12) scale(.42)"/>
+    <use href="#leaf" fill="url(#leafG)" transform="translate(128 8) rotate(-30) scale(.35)"/>
+    <circle cx="100" cy="12" r="2" fill="currentColor"/><circle cx="140" cy="12" r="2" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<!-- ============ GATE: an envelope with a wax seal ============ -->
+<div class="gate" id="gate" role="button" tabindex="0" aria-label="მოსაწვევის გახსნა"
+     data-stages="s1:0,s2:450,s3:1200,s4:2300" data-open="2900" data-burst="380:confetti:#seal:46" hidden>
+  <div class="g-tiles" aria-hidden="true"></div>
+  <svg class="g-branch a" aria-hidden="true"><use href="#branch"/></svg>
+  <svg class="g-branch b" aria-hidden="true"><use href="#branch"/></svg>
+  <div class="g-top">
+    <span class="g-kicker">You are invited</span>
+    <span class="g-names" data-t="host"></span>
+  </div>
+  <div class="env" aria-hidden="true">
+    <div class="env-back"></div>
+    <div class="env-card"><span class="ec-script" data-t="script"></span><span class="ec-date" data-t="dots"></span></div>
+    <div class="env-front"></div>
+    <div class="env-flap"><i></i></div>
+    <div class="seal" id="seal"><b data-t="monogram"></b></div>
+  </div>
+  <p class="g-hint"><svg><use href="#i-note"/></svg><span data-i18n="tapHint"></span></p>
+</div>
+<script>try{document.getElementById("gate").hidden=false;document.documentElement.classList.add("gated")}catch(e){}</script>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="tile-band top" aria-hidden="true"></div>
+    <svg class="h-branch l hx" style="--d:.2;--hx:hx-fade" aria-hidden="true"><use href="#branch"/></svg>
+    <svg class="h-branch r hx" style="--d:.35;--hx:hx-fade" aria-hidden="true"><use href="#branch"/></svg>
+    <div class="wrap hero-in">
+      <p class="kicker hx" style="--d:.3">Save the date</p>
+      <h1 class="names hx" style="--d:.6" data-t="script"></h1>
+      <p class="geo-names" data-letters="host" style="--ch0:1.1s"></p>
+      <div class="date-tile hx" style="--d:1.5;--hx:hx-zoom">
+        <span class="dt-side" data-t="weekday"></span>
+        <span class="dt-day"><b data-t="dayNum"></b></span>
+        <span class="dt-side"><span data-t="month"></span><br><span data-t="year"></span></span>
+      </div>
+      <p class="where hx" style="--d:1.75"><svg><use href="#i-pin"/></svg><span data-t="venue"></span> · <span data-t="city"></span></p>
+      <p class="lead hx" style="--d:1.9" data-t="lead"></p>
+      <div class="ctas hx" style="--d:2.1" data-ctas></div>
+    </div>
+    <div class="waves" aria-hidden="true"><i></i><i></i></div>
+  </header>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="band" id="cd">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Il grande giorno</span><h2 data-i18n="cdTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <div class="count" id="count" data-anim="flip"></div>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section class="band blue" data-section="story">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Our story</span><h2 data-i18n="storyTitle"></h2><svg class="rule"><use href="#rule"/></svg><p class="sub" data-t="storyIntro"></p></div>
+      <div class="story" id="story"></div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="band" data-section="events">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">La giornata</span><h2 data-i18n="dayTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <ol class="timeline" id="day"></ol>
+    </div>
+  </section>
+
+  <!-- ============ DETAILS ============ -->
+  <section class="band tiles-bg" data-section="details">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Good to know</span><h2 data-i18n="detailsTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <div class="details" id="details"></div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION ============ -->
+  <section class="band" id="where">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">The place</span><h2 data-i18n="locTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <div class="place" data-anim="zoom">
+        <div class="place-arch" aria-hidden="true">
+          <svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMax slice">
+            <rect width="200" height="150" fill="#CFE2F3"/>
+            <circle cx="150" cy="58" r="16" fill="#FFE07A"/>
+            <path d="M0 96h200v54H0z" fill="#4E7FC4"/><path d="M0 100c20 3 40-3 60 0s40 3 60 0 40-3 60 0 20 3 20 3" stroke="#BFD6F2" stroke-width="1.6" fill="none" class="wv"/>
+            <path d="M0 110c20 3 40-3 60 0s40 3 60 0 40-3 60 0 20 3 20 3" stroke="#9EC0EA" stroke-width="1.2" fill="none" class="wv d2"/>
+            <g><rect x="18" y="62" width="30" height="36" fill="#F4E3C3"/><rect x="44" y="52" width="26" height="46" fill="#F6C9A4"/><rect x="66" y="66" width="24" height="32" fill="#FBF3E4"/><rect x="88" y="58" width="22" height="40" fill="#F2D78F"/>
+              <path d="M16 62l17-8 17 8zM42 52l15-8 15 8zM64 66l14-7 14 7zM86 58l13-7 13 7z" fill="#C7684A"/>
+              <g fill="#3E6DB3"><rect x="24" y="70" width="6" height="8"/><rect x="36" y="70" width="6" height="8"/><rect x="50" y="60" width="6" height="8"/><rect x="58" y="74" width="6" height="8"/><rect x="72" y="74" width="5" height="7"/><rect x="94" y="66" width="5" height="7"/><rect x="100" y="80" width="5" height="7"/></g></g>
+            <path d="M128 98c6-14 18-14 24 0z" fill="#fff"/><path d="M140 84v14" stroke="#7A5A3A" stroke-width="1.4"/><path d="M140 84l9 10h-9z" fill="#fff"/>
+          </svg>
+        </div>
+        <h3 class="pl-name" data-t="venue"></h3>
+        <p class="pl-addr" data-t="address"></p>
+        <a class="btn solid" id="map-btn" href="#" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span data-i18n="mapBtn"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="band blue" id="rsvp">
+    <div class="wrap">
+      <div class="head" data-anim="up"><span class="script">Will you join us?</span><h2 data-i18n="rsvpTitle"></h2><svg class="rule"><use href="#rule"/></svg></div>
+      <div class="rsvp card" id="rsvp-box" data-anim="up"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" data-anim="up">
+    <svg class="f-branch" aria-hidden="true"><use href="#branch"/></svg>
+    <p class="toast" data-t="toast"></p>
+    <p class="sign" data-t="script"></p>
+    <p class="when" data-t="dots"></p>
+    <p class="brand" data-i18n="brand"></p>
+  </div>
+  <div class="tile-band" aria-hidden="true"></div>
+</footer>
+
+<template id="tpl-story"><article class="chapter" data-anim="up"><div class="cp-photo" data-f="photo"></div><div class="cp-body"><span class="cp-year" data-f="year"></span><span class="cp-season" data-f="season"></span><h3 data-f="title"></h3><p data-f="text"></p></div></article></template>
+<template id="tpl-event"><li class="ev" data-anim="up"><span class="ev-time" data-f="time"></span><span class="ev-dot"><svg data-f="icon"><use href="#i-star"/></svg></span><div class="ev-body"><h3 data-f="title"></h3><p data-f="place"></p><a class="ev-map" data-f="map"><svg><use href="#i-pin"/></svg><span data-f="maptext"></span></a></div></li></template>
+<template id="tpl-detail"><div class="detail" data-anim="flip"><span class="d-ic"><svg data-f="icon"><use href="#i-star"/></svg></span><h3 data-f="label"></h3><p data-f="value"></p></div></template>
+
+<script src="js/config.js"></script>
+<script src="../../assets/core/js/i18n.js"></script>
+<script src="../../assets/core/js/icons.js"></script>
+<script src="../../assets/core/js/fx.js"></script>
+<script src="../../assets/core/js/music.js"></script>
+<script src="../../assets/core/js/core.js"></script>
+<script>
+/* რუკის ღილაკი: mapUrl ან სახელი + მისამართი Google Maps-ში */
+(function(){ var C = window.CONFIG, b = document.getElementById("map-btn"); if (!b) return;
+  function L(v){ return v && typeof v === "object" ? (document.documentElement.lang === "en" ? v.en : v.ka) : (v || ""); }
+  function upd(){ b.href = C.mapUrl || "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(L(C.address)); }
+  upd(); b.addEventListener("click", upd); })();
+</script>
+</body>
+</html>
