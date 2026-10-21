@@ -88,7 +88,43 @@ window.CONFIG = {
     fontHead: '"Noto Serif Georgian", serif', fontScript: '"Great Vibes", cursive', fontNum: '"Cormorant Garamond", serif'
   },
   texts: {
-    ka: { cdTitle: "შევხვდებით...", dayTitle: "დღის განრიგი", tapHint: "შეეხეთ ბეჭედს", gotInvite: "თქვენ მიიღეთ მოსაწვევი", rsvpTitle: "დაგვიდასტურეთ დასწრება", ask: "მოგვწერეთ", mapBtn: "მარშრუტი", placesTitle: "სად გელოდებით", dressTitle: "დრესკოდი", wishTitle: "სურვილები", toDay: "ჩვენს ბედნიერ დღემდე", invite1: "სიყვარულით გიწვევთ", invite2: "ჩვენს ქორწილში", askLine: "კითხვებისთვის მოგვწერეთ", dayTitle2: "ქორწილის დღე" },
-    en: { cdTitle: "See you in...", dayTitle: "The day", tapHint: "Touch the seal", gotInvite: "You have received an invitation", rsvpTitle: "Kindly reply", ask: "Message us", mapBtn: "Directions", placesTitle: "Where", dressTitle: "Dress code", wishTitle: "Wishes", toDay: "until our happy day", invite1: "With love we invite you", invite2: "to our wedding", askLine: "For any questions, message us", dayTitle2: "The wedding day" }
+    /* დასწრების ფორმა: ყველა სტუმრის სახელი და გვარი სავალდებულოა (მაგიდის ბარათებისთვის),
+       WhatsApp-ზე მოსული შეტყობინება — rsvpYes / rsvpNo (*ტექსტი* WhatsApp-ში მუქად ჩანს) */
+    ka: { rsvpIntro: "გთხოვთ, დაგვიდასტუროთ დასწრება და ჩაწეროთ ყველა სტუმრის სახელი და გვარი. ასე თითოეულს მაგიდაზე სახელობითი ბარათი დახვდება.",
+          nameLabel: "თქვენი სახელი და გვარი", fullNameErr: "გთხოვთ, ჩაწეროთ სახელიც და გვარიც.",
+          countLabel: "რამდენი იქნებით, თქვენი ჩათვლით?",
+          guestLabel: i => i + "-ე სტუმრის სახელი და გვარი",
+          rsvpYes: (host, when, names, note) =>
+            "🤍 *რომა & ხატია · 08.11.2026*\n\n" +
+            "ძვირფასო რომა და ხატია!\n" +
+            "გმადლობთ მოსაწვევისთვის. დიდი სიხარულით გიდასტურებთ, რომ " + when + " თქვენს ქორწილში " + (names.length > 1 ? "ვიქნებით" : "ვიქნები") + ". ✨\n\n" +
+            "👥 *სტუმრები (" + names.length + "):*\n" + names.map((n, i) => (i + 1) + ". " + n).join("\n") +
+            (note ? "\n\n💌 *მილოცვა:*\n" + note : "") +
+            "\n\nმალე გნახავთ! 🥂",
+          rsvpNo: (host, when, name, note) =>
+            "🤍 *რომა & ხატია · 08.11.2026*\n\n" +
+            "ძვირფასო რომა და ხატია!\n" +
+            "გმადლობთ მოსაწვევისთვის. სამწუხაროდ, " + when + " მოსვლას ვერ შევძლებ, მაგრამ მთელი გულით გილოცავთ და გისურვებთ უსაზღვრო ბედნიერებას! 🤍" +
+            (note ? "\n\n💌 " + note : "") +
+            "\n\n— " + name,
+          cdTitle: "შევხვდებით...", dayTitle: "დღის განრიგი", tapHint: "შეეხეთ ბეჭედს", gotInvite: "თქვენ მიიღეთ მოსაწვევი", rsvpTitle: "დაგვიდასტურეთ დასწრება", ask: "მოგვწერეთ", mapBtn: "მარშრუტი", placesTitle: "სად გელოდებით", dressTitle: "დრესკოდი", wishTitle: "სურვილები", toDay: "ჩვენს ბედნიერ დღემდე", invite1: "სიყვარულით გიწვევთ", invite2: "ჩვენს ქორწილში", askLine: "კითხვებისთვის მოგვწერეთ", dayTitle2: "ქორწილის დღე" },
+    en: { rsvpIntro: "Please confirm whether you can come and write the full name of every guest, so each of you finds a name card at the table.",
+          nameLabel: "Your first and last name", fullNameErr: "Please enter both first and last name.",
+          countLabel: "How many of you, including yourself?",
+          guestLabel: i => "Guest " + i + ": first and last name",
+          rsvpYes: (host, when, names, note) =>
+            "🤍 *Roma & Khatia · 08.11.2026*\n\n" +
+            "Dear Roma and Khatia,\n" +
+            "Thank you for the invitation. We are delighted to confirm that we will be at your wedding on " + when + ". ✨\n\n" +
+            "👥 *Guests (" + names.length + "):*\n" + names.map((n, i) => (i + 1) + ". " + n).join("\n") +
+            (note ? "\n\n💌 *Wishes:*\n" + note : "") +
+            "\n\nSee you soon! 🥂",
+          rsvpNo: (host, when, name, note) =>
+            "🤍 *Roma & Khatia · 08.11.2026*\n\n" +
+            "Dear Roma and Khatia,\n" +
+            "Thank you for the invitation. Sadly I won't be able to come on " + when + ", but I wish you a lifetime of happiness with all my heart! 🤍" +
+            (note ? "\n\n💌 " + note : "") +
+            "\n\n— " + name,
+          cdTitle: "See you in...", dayTitle: "The day", tapHint: "Touch the seal", gotInvite: "You have received an invitation", rsvpTitle: "Kindly reply", ask: "Message us", mapBtn: "Directions", placesTitle: "Where", dressTitle: "Dress code", wishTitle: "Wishes", toDay: "until our happy day", invite1: "With love we invite you", invite2: "to our wedding", askLine: "For any questions, message us", dayTitle2: "The wedding day" }
   }
 };

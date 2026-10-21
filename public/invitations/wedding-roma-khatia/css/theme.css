@@ -111,6 +111,13 @@ main,.foot{max-width:560px;margin-inline:auto}
 .field label,.legend{font:400 14px/1.4 var(--font-geo);color:var(--head)}
 .submit{background:var(--accent);color:var(--on-accent);font:400 15px/1 var(--font-geo);letter-spacing:.2em;text-transform:uppercase}
 .input,.textarea{font-family:var(--font-geo);font-weight:300}
+/* one name field per extra guest (appears with the + button) */
+.guest-list{display:grid;gap:14px;margin-top:18px}
+.guest-list:empty{display:none}
+.guest{margin:0;padding:14px 14px 12px;border-radius:16px;background:rgba(255,253,249,.7);border:1px dashed rgba(120,105,90,.35);animation:guest-in .45s var(--ease) both}
+.guest label{font-size:13.5px;color:var(--muted)}
+.input[aria-invalid]{border-color:var(--err,#C0392B)}
+@keyframes guest-in{from{opacity:0;transform:translateY(-6px)}}
 
 /* ---------- footer ---------- */
 .foot{padding:0 20px 100px;text-align:center;background:rgba(255,253,249,.45)}
