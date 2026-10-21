@@ -1,0 +1,214 @@
+/* ამბავი · „wedding-roma-khatia“ — დიზაინი „მარგალიტი“: რელიეფური ქაღალდი, ატლასის ყვავილები, მარგალიტის ძაფები */
+:root{
+  --bg:#F7F4EE; --card:rgba(255,253,249,.72); --ink:#6A6058; --head:#776B61; --muted:#9A8F84; --line:rgba(120,105,90,.28);
+  --accent:#9C8C7C; --on-accent:#FFFDF9; --gold:#B9A68C;
+  --font-body:"Cormorant Garamond","Noto Serif Georgian",Georgia,serif; --font-geo:"Noto Serif Georgian",Georgia,serif; --font-script:"Great Vibes",cursive;
+  --wrap:520px; --chip-bg:rgba(255,253,249,.88); --field-bg:rgba(255,255,255,.75); --field-r:10px; --btn-r:10px;
+  --focus-ring:rgba(156,140,124,.18); --choice-on:rgba(156,140,124,.08); --progress:#B9A68C;
+}
+body{font-family:var(--font-geo);font-size:16px;line-height:1.8;font-weight:300;color:var(--ink);background:var(--bg) url("../images/paper.jpg") 0 0/420px 420px}
+main,.foot{max-width:560px;margin-inline:auto}
+@media (min-width:600px){main,.foot{box-shadow:0 0 70px rgba(120,100,80,.12)}}
+.center{text-align:center}
+
+/* ---------- type ---------- */
+.script{margin:0;font:400 clamp(44px,12vw,58px)/1.15 var(--font-script);color:var(--head)}
+.caps{margin:4px 0 0;font:400 13px/1.9 var(--font-geo);letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.caps.small{font-size:11.5px}
+.text{margin:22px auto 0;max-width:36ch;font-size:16px;line-height:1.9}
+.lead{margin:30px 0 0;font:400 19px/1.5 var(--font-geo);color:var(--head)}
+.sec{padding:64px 0}
+
+/* pearl strand divider (images/strand.png repeats sideways) */
+.strand{height:26px;background:url("../images/strand.png") center/auto 26px repeat-x;filter:drop-shadow(0 2px 2px rgba(120,100,80,.12))}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:150px 20px 170px}
+@supports (min-height:100svh){.hero{min-height:100svh}}
+.corner{position:absolute;top:-2%;width:min(96vw,520px);pointer-events:none}
+.corner.l{left:-8%}
+.corner.r{right:-30%;width:min(66vw,380px);transform:scaleX(-1) rotate(10deg)}
+.row{position:absolute;left:-12%;bottom:-3%;width:124%;max-width:none;pointer-events:none}
+.hero-in{position:relative;z-index:2;text-align:center}
+.names{margin:18px 0 6px;font:400 clamp(66px,20vw,96px)/.98 var(--font-script);color:var(--head);display:flex;flex-direction:column;align-items:center}
+.names .amp{font-size:.55em;line-height:1.1;color:var(--gold)}
+.geo-names{margin:10px 0 0;font:400 17px/1.4 var(--font-geo);letter-spacing:.14em;color:var(--ink)}
+.hero-date{margin:18px 0 0;font:500 21px/1.3 var(--font-body);letter-spacing:.06em;color:var(--head)}
+.hero-date span{font-family:var(--font-geo);font-size:17px;font-weight:400}
+
+/* ---------- couple photo in an arch ---------- */
+.arch{position:relative;width:min(80%,340px);margin:0 auto;aspect-ratio:2/3}
+.arch-photo .photo img{object-position:50% 72%}
+.arch-photo{position:absolute;inset:0;border-radius:999px 999px 18px 18px;overflow:hidden;border:6px solid #FFFDF9;box-shadow:0 0 0 1px var(--line),0 24px 50px -24px rgba(110,90,70,.45)}
+.photo{position:relative;width:100%;height:100%;background:linear-gradient(160deg,#F1EBE2,#E4DACD)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s var(--ease)}
+.photo.has img{opacity:1}
+.photo .ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:4px;color:var(--muted);font-size:13px;letter-spacing:.06em}
+.photo .ph svg{width:30px;height:30px}
+.photo .ph small{font-size:11px;opacity:.7}
+.photo.has .ph{display:none}
+.bow{position:absolute;width:120px;right:-34px;top:-40px;pointer-events:none;filter:drop-shadow(0 4px 6px rgba(120,100,80,.15))}
+
+/* ---------- framed cards (countdown, the day) ---------- */
+.frame{position:relative;margin:0 auto;padding:44px 20px 38px;border-radius:44px;background:var(--card);border:1.5px solid rgba(120,105,90,.45);box-shadow:inset 0 0 0 6px rgba(255,253,249,.9),inset 0 0 0 7px rgba(120,105,90,.25)}
+.frame .bow{right:-26px;top:-46px}
+.frame.wavy{margin-top:34px;border-radius:60px 60px 60px 60px/40px 40px 40px 40px}
+.count{--cd-gap:0;margin:22px auto 0;max-width:380px}
+.cd{flex:1;padding:6px 2px;border-left:1px solid var(--line)}
+.cd:first-child{border-left:0}
+.cd b{font:500 clamp(34px,10vw,44px)/1 var(--font-body);color:var(--head);letter-spacing:.02em}
+.cd small{margin-top:8px;font:400 10.5px/1.2 var(--font-geo);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.ctas{margin-top:26px}
+.btn{font:400 14px/1 var(--font-geo);letter-spacing:.08em}
+.btn.solid{background:var(--accent);color:var(--on-accent);box-shadow:0 10px 22px -12px rgba(110,90,70,.6)}
+.btn.ghost,.btn.line{border:1px solid var(--accent);color:var(--head);background:rgba(255,253,249,.6)}
+.btn.line:hover{background:var(--accent);color:var(--on-accent)}
+
+/* ---------- the places ---------- */
+.places{display:grid;gap:30px;margin-top:30px}
+.venue{padding:54px 22px 26px;border-radius:999px 999px 26px 26px/220px 220px 26px 26px;background:var(--card);border:1.5px solid rgba(120,105,90,.4);box-shadow:inset 0 0 0 5px rgba(255,253,249,.9),inset 0 0 0 6px rgba(120,105,90,.2)}
+.v-time{margin:0;font:500 26px/1 var(--font-body);letter-spacing:.14em;color:var(--gold)}
+.venue h3{margin:12px 0 4px;font:400 23px/1.35 var(--font-geo);color:var(--head)}
+.v-note{margin:0 0 18px;font-size:14.5px;color:var(--muted)}
+.v-photo{height:230px;border-radius:16px;overflow:hidden;border:4px solid #FFFDF9;box-shadow:0 0 0 1px var(--line),0 14px 30px -18px rgba(110,90,70,.5);margin-bottom:20px}
+.venue[data-n="1"] .v-photo{height:320px}
+.venue[data-n="1"] .photo img{object-position:50% 60%}
+.venue[data-n="3"] .photo img{object-position:28% 50%}
+.credit{margin:-12px 0 16px;font-size:10.5px;color:var(--muted);opacity:.8}
+.credit a{color:inherit}
+
+/* ---------- the day ---------- */
+.timing{list-style:none;margin:0;padding:0}
+.ev{padding:0 6px 30px}
+.ev:last-child{padding-bottom:0}
+.ev+.ev::before{content:"";display:block;width:6px;height:6px;margin:0 auto 26px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#D9CFC2 70%);box-shadow:0 1px 2px rgba(0,0,0,.15)}
+.ev-time{margin:0;font:500 24px/1 var(--font-body);letter-spacing:.2em;color:var(--head)}
+.ev h3{margin:10px 0 6px;font:400 16px/1.5 var(--font-geo);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.ev-note{margin:0 auto;max-width:30ch;font-size:14.5px;line-height:1.7;color:var(--muted);font-style:italic}
+
+/* ---------- dress code ---------- */
+.palette{display:flex;justify-content:center;gap:12px;margin:26px 0 28px;flex-wrap:wrap}
+.palette i{position:relative;width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 3px #FFFDF9,0 0 0 4px var(--line),0 8px 14px -8px rgba(110,90,70,.5)}
+.palette i::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.75),rgba(255,255,255,0) 45%)}
+.note{display:flex;align-items:center;justify-content:center;gap:12px;margin:0 auto;max-width:34ch;font-size:15.5px;color:var(--head);text-align:left}
+.note img{width:58px;flex:none}
+
+/* ---------- RSVP ---------- */
+.rsvp{margin-top:28px;text-align:left;padding:28px 22px;border-radius:26px;background:var(--card);border:1.5px solid rgba(120,105,90,.35)}
+.rsvp .intro{color:var(--muted);font-size:15px}
+.field label,.legend{font:400 14px/1.4 var(--font-geo);color:var(--head)}
+.submit{background:var(--accent);color:var(--on-accent);font:400 15px/1 var(--font-geo);letter-spacing:.2em;text-transform:uppercase}
+.input,.textarea{font-family:var(--font-geo);font-weight:300}
+
+/* ---------- footer ---------- */
+.foot{padding:0 20px 100px;text-align:center;background:rgba(255,253,249,.45)}
+.foot .strand{margin:0 -20px}
+.f-flower{width:96px;margin:46px auto 6px}
+.f-names{margin:0;font:400 clamp(50px,14vw,64px)/1.1 var(--font-script);color:var(--head)}
+.f-line{display:block;width:1px;height:46px;margin:18px auto;background:var(--line)}
+.f-ask{display:inline-flex;align-items:center;gap:8px;margin-top:8px;font-size:15px;color:var(--head);text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--line)}
+.f-ask svg{width:16px;height:16px}
+.f-thanks{margin:30px 0 4px;font:400 17px/1.5 var(--font-geo);color:var(--head)}
+
+/* =====================================================================
+   GATE: 3D envelope (canvas from js/gate3d.js) + a CSS fallback
+   ===================================================================== */
+.gate{background:var(--bg) url("../images/paper.jpg") 0 0/420px 420px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:max(56px,env(safe-area-inset-top)) 20px max(40px,env(safe-area-inset-bottom));transition:opacity 1.1s var(--ease),transform 1.3s var(--ease)}
+.gate.open{opacity:0;transform:scale(1.06)}
+.g-corner{position:absolute;top:-3%;width:min(70vw,420px);pointer-events:none}
+.g-corner.l{left:-16%}
+.g-corner.r{right:-16%;transform:scaleX(-1)}
+.g-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1}
+.g-top,.g-hint{position:relative;z-index:2;margin:0;text-align:center;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.g-top{margin-top:16vh}
+.g-script{display:block;font:400 44px/1 var(--font-script);color:var(--head)}
+.g-names{display:block;margin-top:10px;font:400 15px/1.3 var(--font-geo);letter-spacing:.2em;color:var(--muted)}
+.g-hint{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:99px;border:1px solid var(--line);background:rgba(255,253,249,.8);font:400 13px/1 var(--font-geo);letter-spacing:.1em;color:var(--head);animation:hint 2.2s ease-in-out infinite}
+.g-hint svg{width:16px;height:16px;color:var(--accent)}
+@keyframes hint{50%{transform:translateY(-4px)}}
+.gate.go .g-hint,.gate.go .g-top{opacity:0;transform:translateY(-10px);animation:none}
+.g-fallback{position:absolute;left:50%;top:52%;width:min(80vw,360px);aspect-ratio:1.45;transform:translate(-50%,-50%)}
+.has3d .g-fallback{display:none}
+.gf-env{position:absolute;inset:0;background:linear-gradient(160deg,#FBF8F2,#ECE4D8);border-radius:4px;box-shadow:0 30px 50px -20px rgba(110,90,70,.45)}
+.gf-flap{position:absolute;left:0;right:0;top:0;height:60%;background:linear-gradient(180deg,#F6F1E8,#E9E0D2);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;transition:transform 1.2s var(--ease) .5s}
+.gf-seal{position:absolute;left:50%;top:60%;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#CDB99F,#A68F75 65%,#8C765E);color:#FBF5EA;font:500 17px/1 var(--font-geo);box-shadow:0 6px 12px rgba(80,60,40,.35);transition:transform .6s var(--spring),opacity .6s}
+.gate.go .gf-seal{transform:scale(1.3) rotate(-20deg);opacity:0}
+.gate.go .gf-flap{transform:rotateX(180deg)}
+
+/* =====================================================================
+   PREMIUM DETAILS: gold shimmer, swaying flowers, pearl strands that unroll,
+   pearls for the countdown, arched photos
+   ===================================================================== */
+/* names: a slow gold light passes over the script */
+.names .hx{background:linear-gradient(100deg,#776B61 0%,#776B61 40%,#D9C08E 50%,#776B61 60%,#776B61 100%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+.names .amp.hx{background-image:linear-gradient(100deg,#B9A68C 0%,#B9A68C 40%,#F3E2B8 50%,#B9A68C 60%,#B9A68C 100%)}
+.opened .names .hx{animation:var(--hx,hx-up) 1.25s var(--ease) both,shimmer 7s linear infinite;animation-delay:calc(var(--d,0) * 1s),calc(var(--d,0) * 1s + 2.2s)}
+@keyframes shimmer{from{background-position:100% 0}to{background-position:-150% 0}}
+/* flowers breathe and sway */
+.opened .corner.l{animation:hx-fade 1.25s var(--ease) both,sway 9s ease-in-out 1.5s infinite;transform-origin:0 0}
+.opened .corner.r{animation:hx-fade 1.25s var(--ease) .4s both,sway-r 10s ease-in-out 1.9s infinite;transform-origin:100% 0}
+.opened .row{animation:hx-up 1.25s var(--ease) .7s both,rise 8s ease-in-out 2s infinite}
+@keyframes sway{50%{transform:rotate(1.6deg) scale(1.015)}}
+@keyframes sway-r{0%,100%{transform:scaleX(-1) rotate(10deg)}50%{transform:scaleX(-1) rotate(8.4deg) scale(1.02)}}
+@keyframes rise{50%{transform:translateY(-6px)}}
+.bow{animation:bow 6s ease-in-out infinite}
+@keyframes bow{50%{transform:rotate(-4deg) translateY(-3px)}}
+/* pearl strands unroll from the middle when they scroll in */
+[data-anim="wipe"]{transition:clip-path 1.8s var(--ease)}
+[data-anim="wipe"].pre{opacity:1!important;clip-path:inset(0 50% 0 50%)}
+[data-anim="wipe"]:not(.pre){clip-path:inset(0 0 0 0)}
+/* countdown: numbers inside pearls */
+.count{--cd-gap:10px;max-width:none}
+.cd{flex:none;width:72px;height:72px;border-left:0;border-radius:50%;padding:0;
+  background:radial-gradient(circle at 32% 26%,#FFFFFF 0%,#FBF7F0 22%,#EDE5D9 58%,#D8CDBE 86%,#CBBFAE 100%);
+  box-shadow:0 10px 18px -8px rgba(110,90,70,.45),inset 0 -4px 10px rgba(150,130,105,.25),inset 0 3px 6px rgba(255,255,255,.9)}
+.cd:first-child{border-left:0}
+.cd b{font-size:30px}
+.cd small{margin-top:4px;font-size:9px;letter-spacing:.12em}
+@media (max-width:360px){.cd{width:64px;height:64px}.cd b{font-size:26px}}
+/* venue photos in arches */
+.v-photo{border-radius:999px 999px 16px 16px/180px 180px 16px 16px}
+.venue[data-n="1"] .v-photo{border-radius:999px 999px 16px 16px/200px 200px 16px 16px}
+.venue .v-photo .photo img{transform:scale(1.08);transition:opacity 1.2s var(--ease),transform 2.4s var(--ease)}
+.venue:not(.pre) .v-photo .photo img{transform:scale(1)}
+/* timeline pearls */
+.ev+.ev::before{width:11px;height:11px;background:radial-gradient(circle at 35% 30%,#fff,#E6DDD0 60%,#CFC3B2);box-shadow:0 2px 4px rgba(110,90,70,.3),0 0 0 4px rgba(255,253,249,.8)}
+/* buttons: a soft light glides over */
+.btn.solid,.submit{background-image:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);background-size:250% 100%;background-repeat:no-repeat;animation:btn-shine 4.5s ease-in-out infinite}
+@keyframes btn-shine{0%,60%{background-position:150% 0}100%{background-position:-60% 0}}
+@media (prefers-reduced-motion:reduce){.names .hx,.corner,.row,.bow,.btn.solid,.submit{animation:none!important}}
+
+/* =====================================================================
+   GATE „ქაღალდის ყვავილები“: 3D relief (canvas from js/bloom3d.js) + a white oval with the text
+   ===================================================================== */
+.gate.bloom{background:#E9E5DD url("../images/paper.jpg") 0 0/420px 420px;justify-content:flex-end;padding-bottom:max(38px,env(safe-area-inset-bottom))}
+.gate.bloom .g-canvas{z-index:0}
+.bl-oval{position:absolute;left:50%;top:48%;z-index:2;width:min(72vw,330px);aspect-ratio:.7;border-radius:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(120% 90% at 50% 35%,#FFFFFF 0%,#FDFBF7 60%,#F7F3EC 100%);
+  box-shadow:0 26px 50px -22px rgba(70,55,35,.45),0 6px 14px -8px rgba(70,55,35,.25),inset 0 0 0 1px rgba(160,140,110,.12);
+  display:grid;place-items:center;will-change:transform}
+.bl-oval::before{content:"";position:absolute;inset:9px;border-radius:50%;border:1px solid rgba(181,162,140,.45)}
+.bl-in{position:relative;text-align:center;padding:0 12%}
+.bl-in>*{opacity:0;animation:bl-line 1.1s var(--ease) forwards}
+.bl-in>*:nth-child(1){animation-delay:.35s}.bl-in>*:nth-child(2){animation-delay:.6s}.bl-in>*:nth-child(3){animation-delay:.85s}.bl-in>*:nth-child(4){animation-delay:1.1s}
+@keyframes bl-line{from{opacity:0;transform:translateY(12px);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+.bl-s{margin:0;font:400 clamp(30px,9vw,40px)/1.15 var(--font-script);color:#B5A28C}
+.bl-n{margin:14px 0 16px;display:flex;flex-direction:column;align-items:center;font:400 clamp(22px,6.8vw,30px)/1.35 var(--font-geo);letter-spacing:.16em;color:#2F2A25}
+.bl-n span{font:400 .9em/1.2 var(--font-body);color:#8C7F72}
+.bl-d{margin:16px 0 0;font:400 clamp(12px,3.6vw,15px)/1.5 var(--font-geo);letter-spacing:.14em;color:#2F2A25}
+/* the opening (pulse, fade, the oval growing over the screen) is driven from js/bloom3d.js */
+.gate.bloom.go .bl-in>*{opacity:1;animation:none}
+.gate.bloom .g-hint{position:relative;z-index:3;background:rgba(253,251,247,.92)}
+/* gate v3: the envelope (js/envelope3d.js) sits over the paper-flower relief (js/bloom3d.js) */
+.gate.bloom{justify-content:space-between;padding-top:max(64px,env(safe-area-inset-top))}
+.gate.bloom .g-top{margin-top:7vh;padding:14px 26px 12px;border-radius:999px;background:rgba(253,251,247,.82);box-shadow:0 10px 30px -14px rgba(80,60,40,.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.g-kick{display:block;font:400 15px/1.4 var(--font-geo);letter-spacing:.22em;color:#5E5248}
+.gate.bloom .g-script{margin-top:2px;font-size:34px;color:#B5A28C}
+.gate.bloom .g-canvas+.g-canvas{z-index:1}
+/* 3D chokha figures in the dress code */
+.chokha3d{margin:0 auto 18px;width:min(92%,420px)}
+.chokha3d img{width:100%;height:auto;filter:drop-shadow(0 18px 24px rgba(90,70,50,.18))}
+/* cards and frames swing in from 3D as they appear */
+[data-anim="tilt3d"]{transform-style:preserve-3d;transition:opacity 1s var(--ease),transform 1.4s var(--ease)}
+[data-anim="tilt3d"].pre{opacity:0;transform:perspective(900px) rotateX(38deg) rotateY(-8deg) translateY(60px) scale(.92)}
+[data-anim="tilt3d"]:not(.pre){opacity:1;transform:perspective(900px) rotateX(0) rotateY(0) translateY(0) scale(1)}

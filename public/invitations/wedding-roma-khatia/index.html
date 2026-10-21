@@ -1,0 +1,180 @@
+<!doctype html>
+<!-- ამბავი · მოსაწვევი „wedding-roma-khatia“ — რომა & ხატია, 8 ნოემბერი 2026, ქუთაისი
+     დიზაინი „მარგალიტი“: სპილოსძვლისფერი რელიეფური ქაღალდი, ატლასის ყვავილები მარგალიტებით, მარგალიტის ძაფები.
+     გახსნა: 3D კონვერტი რელიეფური ქაღალდის ყვავილებზე (js/bloom3d.js + js/envelope3d.js). ტექსტები: js/config.js · სტილი: css/theme.css
+     ყვავილები და მარგალიტები (images/*.png) 3D-ში დახატულია ამ მოსაწვევისთვის. -->
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>რომა & ხატია · 8 ნოემბერი 2026</title>
+<meta name="description" content="რომა და ხატიას საქორწილო მოსაწვევი · 8 ნოემბერი 2026, ქუთაისი">
+<meta name="theme-color" content="#F7F4EE">
+<meta property="og:title" content="რომა & ხატია · 08.11.2026">
+<meta property="og:description" content="საქორწილო მოსაწვევი · ქუთაისი">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+Georgian:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="../../assets/core/css/base.css">
+<link rel="stylesheet" href="css/theme.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+
+<!-- ============ GATE: a 3D envelope over embossed paper flowers (js/bloom3d.js + js/envelope3d.js) ============ -->
+<div class="gate bloom" id="gate" role="button" tabindex="0" aria-label="მოსაწვევის გახსნა"
+     data-stages="s1:0,s2:2600" data-open="3300" data-burst="450:gold::50" hidden>
+  <p class="g-top"><span class="g-kick" data-i18n="gotInvite"></span><span class="g-script">with love</span></p>
+  <p class="g-hint" id="g-hint"><svg><use href="#i-heart"/></svg><span data-i18n="tapHint"></span></p>
+</div>
+<script>try{document.getElementById("gate").hidden=false;document.documentElement.classList.add("gated")}catch(e){}</script>
+
+<main>
+  <!-- ============ HERO: flowers, names, date ============ -->
+  <header class="hero">
+    <img class="corner l hx" style="--d:.2;--hx:hx-fade" src="images/corner.png" alt="" aria-hidden="true">
+    <img class="corner r hx" style="--d:.4;--hx:hx-fade" src="images/corner.png" alt="" aria-hidden="true">
+    <div class="hero-in">
+      <p class="caps hx" style="--d:.5"><span data-i18n="invite1"></span><br><span data-i18n="invite2"></span></p>
+      <h1 class="names">
+        <span class="hx" style="--d:.9">Roma</span>
+        <span class="amp hx" style="--d:1.3">&amp;</span>
+        <span class="hx" style="--d:1.6">Khatia</span>
+      </h1>
+      <p class="geo-names hx" style="--d:2" data-t="host"></p>
+      <p class="hero-date hx" style="--d:2.2"><span data-t="dateLong"></span></p>
+      <p class="caps small hx" style="--d:2.4" data-t="city"></p>
+    </div>
+    <img class="row hx" style="--d:.7;--hx:hx-up" src="images/row.png" alt="" aria-hidden="true">
+  </header>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
+  <!-- ============ THE COUPLE: photo in an arch (images/couple.jpg) ============ -->
+  <section class="sec">
+    <div class="wrap center">
+      <figure class="arch" data-anim="tilt3d">
+        <div class="arch-photo kb" data-photo="couplePhoto"></div>
+        <img class="bow" src="images/bow.png" alt="" aria-hidden="true">
+      </figure>
+      <p class="lead" data-anim="up" data-t="dear"></p>
+      <p class="text" data-anim="up" data-t="lead"></p>
+    </div>
+  </section>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="sec">
+    <div class="wrap center">
+      <div class="frame" data-anim="tilt3d">
+        <img class="bow" src="images/bow.png" alt="" aria-hidden="true">
+        <h2 class="script">Countdown</h2>
+        <p class="caps" data-i18n="toDay"></p>
+        <div class="count" id="count"></div>
+      </div>
+      <div class="ctas" data-anim="up" data-ctas></div>
+    </div>
+  </section>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
+  <!-- ============ THE PLACES: each with a photo and a route button ============ -->
+  <section class="sec">
+    <div class="wrap center">
+      <h2 class="script" data-anim="up">The places</h2>
+      <p class="caps" data-anim="up" data-i18n="placesTitle"></p>
+      <div class="places">
+        <article class="venue" data-anim="tilt3d" data-n="1"><p class="v-time">10:00</p><h3 data-t="place1"></h3><p class="v-note" data-t="place1Note"></p><div class="v-photo kb" data-photo="place1Photo"></div><a class="btn line js-route" href="#" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span data-i18n="mapBtn"></span></a></article>
+        <article class="venue" data-anim="tilt3d" data-n="2"><p class="v-time">13:00</p><h3 data-t="place2"></h3><p class="v-note" data-t="place2Note"></p><div class="v-photo kb" data-photo="place2Photo"></div><p class="credit">ფოტო: <a href="https://commons.wikimedia.org/wiki/File:2014_Kutaisi,_Katedra_Bagrati_(04).jpg" target="_blank" rel="noopener">Marcin Konsek</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p><a class="btn line js-route" href="#" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span data-i18n="mapBtn"></span></a></article>
+        <article class="venue" data-anim="tilt3d" data-n="3"><p class="v-time">17:00</p><h3 data-t="place3"></h3><p class="v-note" data-t="place3Note"></p><div class="v-photo kb" data-photo="place3Photo"></div><a class="btn line js-route" href="#" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span data-i18n="mapBtn"></span></a></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
+  <!-- ============ THE DAY ============ -->
+  <section class="sec" data-section="events">
+    <div class="wrap center">
+      <h2 class="script" data-anim="up">Wedding day</h2>
+      <p class="caps" data-anim="up"><span data-t="dots"></span></p>
+      <div class="frame wavy" data-anim="tilt3d">
+        <img class="bow" src="images/bow.png" alt="" aria-hidden="true">
+        <ol class="timing" id="day"></ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
+  <!-- ============ DRESS CODE ============ -->
+  <section class="sec">
+    <div class="wrap center">
+      <h2 class="script" data-anim="up">Dress code</h2>
+      <p class="caps" data-anim="up" data-t="dressCode"></p>
+      <p class="text" data-anim="up" data-t="dressNote"></p>
+      <div class="palette" id="palette" data-anim="up"></div>
+      <figure class="chokha3d" data-anim="zoom"><img src="images/chokha3d.png" alt="" aria-hidden="true"></figure>
+      <p class="note" data-anim="up"><img src="images/single.png" alt="" aria-hidden="true"><span data-t="chokhaNote"></span></p>
+    </div>
+  </section>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
+  <!-- ============ WISHES ============ -->
+  <section class="sec">
+    <div class="wrap center">
+      <h2 class="script" data-anim="up">Wishes</h2>
+      <p class="text" data-anim="up" data-t="wishes"></p>
+    </div>
+  </section>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
+  <!-- ============ RSVP ============ -->
+  <section class="sec" id="rsvp">
+    <div class="wrap center">
+      <h2 class="script" data-anim="up">Kindly reply</h2>
+      <p class="caps" data-anim="up" data-i18n="rsvpTitle"></p>
+      <div class="rsvp" id="rsvp-box" data-anim="up"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+  <img class="f-flower" src="images/single.png" alt="" aria-hidden="true">
+  <p class="f-names">Roma &amp; Khatia</p>
+  <i class="f-line"></i>
+  <p class="caps" data-i18n="askLine"></p>
+  <a class="f-ask js-ask" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-i18n="ask"></span></a>
+  <p class="f-thanks" data-t="thanks"></p>
+  <p class="caps small" data-t="dots"></p>
+</footer>
+
+<!-- one line of the day -->
+<template id="tpl-event"><li class="ev" data-anim="up"><p class="ev-time" data-f="time"></p><h3 data-f="title"></h3><p class="ev-note" data-f="note"></p></li></template>
+
+<script src="js/config.js"></script>
+<script src="../../assets/core/js/i18n.js"></script>
+<script src="../../assets/core/js/icons.js"></script>
+<script src="../../assets/core/js/fx.js"></script>
+<script src="js/music.js"></script>
+<script src="../../assets/core/js/core.js"></script>
+<script>
+/* route buttons, the question button (WhatsApp) and the dress-code colours */
+(function(){ var C = window.CONFIG, wa = String(C.whatsapp || "").replace(/\D/g, "");
+  document.querySelectorAll(".venue").forEach(function(v){ var q = C["place" + v.dataset.n + "Map"] || "";
+    v.querySelector(".js-route").href = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(q);
+  });
+  document.querySelectorAll(".js-ask").forEach(function(a){ a.href = "https://wa.me/" + wa + "?text=" + encodeURIComponent("გამარჯობა! კითხვა მაქვს ქორწილთან დაკავშირებით:"); });
+  var pal = document.getElementById("palette"); if (pal) pal.innerHTML = (C.palette || []).map(function(c){ return "<i style=\"background:" + c + "\"></i>"; }).join("");
+})();
+</script>
+<script src="js/bloom3d.js"></script>
+<script src="js/envelope3d.js"></script>
+<script src="js/ambient3d.js"></script>
+</body>
+</html>
