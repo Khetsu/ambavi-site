@@ -65,6 +65,18 @@
 
   <div class="strand" data-anim="wipe" aria-hidden="true"></div>
 
+  <!-- ============ OUR STORY: chapters with photos (js/config.js → story) ============ -->
+  <section class="sec" data-section="story">
+    <div class="wrap center">
+      <h2 class="script" data-anim="up">Our story</h2>
+      <p class="caps" data-anim="up" data-t="storyIntro"></p>
+      <div class="story" id="story"></div>
+      <p class="lead story-outro" data-anim="up" data-t="storyOutro"></p>
+    </div>
+  </section>
+
+  <div class="strand" data-anim="wipe" aria-hidden="true"></div>
+
   <!-- ============ COUNTDOWN ============ -->
   <section class="sec">
     <div class="wrap center">
@@ -154,6 +166,8 @@
   <p class="caps small" data-t="dots"></p>
 </footer>
 
+<!-- one chapter of the story -->
+<template id="tpl-story"><article class="chapter" data-anim="tilt3d"><div class="cp-photo kb" data-f="photo"></div><span class="cp-year" data-f="year"></span><span class="cp-season" data-f="season"></span><h3 data-f="title"></h3><p data-f="text"></p></article></template>
 <!-- one line of the day -->
 <template id="tpl-event"><li class="ev" data-anim="up"><p class="ev-time" data-f="time"></p><h3 data-f="title"></h3><p class="ev-note" data-f="note"></p></li></template>
 

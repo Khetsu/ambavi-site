@@ -15,8 +15,8 @@ window.CONFIG = {
 
   heroLine: "Together towards our most beautiful tomorrow",
   dear: { ka: "ძვირფასო ოჯახო და მეგობრებო!", en: "Dear family and friends!" },
-  lead: { ka: "ძალიან გვინდა, ჩვენი ცხოვრების ერთ-ერთი ყველაზე მნიშვნელოვანი და ბედნიერი დღე თქვენთან ერთად გავატაროთ. სიხარულით გიწვევთ ჩვენს ქორწილში!",
-          en: "We would love to share one of the most important and happiest days of our lives with you. We are delighted to invite you to our wedding!" },
+  lead: { ka: "ყველაზე ბედნიერი დღე მაშინაა სრული, როცა საყვარელი ადამიანები გვერდით გვყავს. გელოდებით ჩვენს ქორწილში!",
+          en: "Our happiest day is only complete with our loved ones beside us. We can't wait to celebrate with you!" },
 
   /* სამი ადგილი: სახელი, დრო/აღწერა, ფოტო და რუკა (map: Google Maps-ის ძებნა ან ზუსტი https:// ბმული) */
   place1: { ka: "სასტუმრო „სოლომონი“", en: "Hotel Solomoni" },
@@ -39,9 +39,9 @@ window.CONFIG = {
   ],
 
   dressCode: { ka: "კლასიკური, ლამაზი სამოსი", en: "Classic, elegant attire" },
-  dressNote: { ka: "ძალიან გაგვახარებს, თუ სამოსის არჩევისას ამ ფერებს გაითვალისწინებთ.", en: "We would be delighted if you kept these colours in mind." },
+  dressNote: { ka: "ძალიან გაგვახარებს, თუ სამოსის არჩევისას ამ ფერებს გაითვალისწინებთ. თეთრი ფერი, გთხოვთ, პატარძალს დაუტოვოთ.", en: "We would be delighted if you kept these colours in mind. Please leave white to the bride." },
   chokhaNote: { ka: "ჩვენ, წყვილი, ქართულ ჩოხებში ვიქნებით", en: "We, the couple, will wear Georgian chokhas" },
-  palette: ["#F4EFE7", "#E4D9C9", "#CBB9A4", "#A08F7E", "#6F655C"],
+  palette: ["#D8A7A7", "#D2BC98", "#A8B89A", "#9EB3C9", "#B49AB8", "#8C6F66"],   // ფერფლისფერი ვარდისფერი, შამპანური, ზეთისხილისფერი, ცისფერი, ლავანდა, მოკა (თეთრის გარეშე)
 
   wishes: { ka: "ჩვენთვის ყველაზე ძვირფასი თქვენი მობრძანება, მხარდაჭერა და თბილი სიტყვებია ამ განსაკუთრებულ დღეს. თუ საჩუქრით გინდათ გაგვახაროთ, მადლობელი ვიქნებით წვლილისთვის ჩვენს საერთო მომავალში.",
             en: "Your presence, support and warm words are what matter most to us. If you would like to give a gift, we will be grateful for a contribution to our shared future." },
@@ -49,7 +49,20 @@ window.CONFIG = {
   questions: { ka: "თუ რაიმე კითხვა გაქვთ, ყოველთვის შეგიძლიათ დაგვიკავშირდეთ.", en: "If you have any questions, you can always contact us." },
   thanks: { ka: "გმადლობთ, რომ ჩვენთან ხართ!", en: "Thank you for being with us!" },
 
-  story: [],
+  /* ჩვენი ისტორია: თითო თავი = ფოტო + სათაური + ტექსტი (year — ხელწერით ზემოთ, season — პატარა ასოებით) */
+  storyIntro: { ka: "ორი გული, ერთი გზა", en: "Two hearts, one path" },
+  story: [
+    { year: "Us", season: { ka: "როგორ დაიწყო", en: "How it began" }, photo: "images/story-1.jpg",
+      title: { ka: "ერთმანეთი ვიპოვეთ", en: "We found each other" },
+      text: { ka: "ჩვენი ამბავი უბრალო გაცნობით დაიწყო, ისე, როგორც ბევრი ლამაზი ამბავი იწყება ყოველგვარი ხმაურისა და დიდი მოლოდინების გარეშე. ნელ-ნელა ერთმანეთის ყოველდღიურობის ნაწილი გავხდით, ერთმანეთში სიმშვიდე, სითბო და ის განსაკუთრებული სიახლოვე ვიპოვეთ, რომელიც სახლს ჰგავს.",
+              en: "Our story began with a simple introduction, the way many beautiful stories begin, without any fuss or great expectations. Little by little we became part of each other's everyday lives, and found in each other calm, warmth and that special closeness that feels like home." } },
+    { year: "Forever", season: { ka: "და ახლა", en: "And now" }, photo: "images/story-2.jpg",
+      title: { ka: "სამუდამოდ ერთად", en: "Together, forever" },
+      text: { ka: "დღეს კი, როცა უკან ვიყურებით, გვიხარია, რომ ჩვენი გზები ერთმანეთს შეხვდა. რადგან ზოგჯერ ყველაზე ლამაზი სიყვარული სწორედ ის არის, რომელიც ნელა იზრდება, პატარა მომენტებში იმალება და ბოლოს ყველაზე დიდ გადაწყვეტილებამდე მიგიყვანს: ერთად გაატარო მთელი ცხოვრება.",
+              en: "Today, looking back, we are so glad our paths crossed. Because sometimes the most beautiful love is the one that grows slowly, hides in small moments and finally leads you to the biggest decision of all: to spend your whole life together." } }
+  ],
+  storyOutro: { ka: "ახლა გვინდა, ჩვენი ამბის ამ განსაკუთრებულ დღეს თქვენც იყოთ ჩვენთან, რადგან ყველაზე ლამაზი დღეები საყვარელ ადამიანებთან ერთად კიდევ უფრო ლამაზი ხდება.",
+                en: "Now we want you to be with us on this special day of our story, because the most beautiful days become even more beautiful with the people we love." },
   photos: [],
 
   calTitle: { ka: "რომა და ხატიას ქორწილი", en: "Roma & Khatia's wedding" },
